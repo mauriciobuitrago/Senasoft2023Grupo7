@@ -1,6 +1,8 @@
-com/booking/steps/LoginStep.java
- com.booking.steps.LoginStep
-com/booking/pageobjects/IndexPage.java
- com.booking.pageobjects.IndexPage
 com/booking/pageobjects/LoginPage.java
  com.booking.pageobjects.LoginPage
+com/booking/utils/LoginModel.java
+ com.booking.utils.LoginModel
+com/booking/pageobjects/IndexPage.java
+ com.booking.pageobjects.IndexPage
+com/booking/steps/LoginStep.java
+ com.booking.steps.LoginStep

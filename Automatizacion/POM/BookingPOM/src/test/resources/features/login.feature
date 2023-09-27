@@ -4,8 +4,10 @@ Feature: Testing of the login module
     Given that the user is on the index page
     When the user click on the login button
     And the user enters the following credentials
+      | email   | password   |
+      | <email> | <password> |
     Then the user should see my account icon
 
     Examples:
-      | email                   | password | confirmPassword |
-      | jose.costaros@gmail.com | 1234     | 1234            |
+      | email                  | password      |
+      | dsbulla8@misena.edu.co | Senasoft2023* |

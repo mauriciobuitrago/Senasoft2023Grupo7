@@ -2,8 +2,12 @@ package com.booking.steps;
 
 import com.booking.pageobjects.IndexPage;
 import com.booking.pageobjects.LoginPage;
+import com.booking.utils.LoginModel;
 import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
+
+import java.util.List;
+import java.util.Map;
 
 public class LoginStep {
     //class instance
@@ -23,10 +27,11 @@ public class LoginStep {
     }
 
     @Step
-    public void enterData(){
-        indexPage.getDriver().findElement(loginPage.getTXT_EMAIL()).sendKeys("dsbulla8@misena.edu.co");
+    public void enterData(List<LoginModel> data){
+        LoginModel modelData = data.get(0);//extract data from data list for logging
+        indexPage.getDriver().findElement(loginPage.getTXT_EMAIL()).sendKeys(modelData.getEmail());
         indexPage.getDriver().findElement(loginPage.getBTN_EMAIL()).click();
-        indexPage.getDriver().findElement(loginPage.getTXT_PASSWORD()).sendKeys("Senasoft2023*");
+        indexPage.getDriver().findElement(loginPage.getTXT_PASSWORD()).sendKeys(modelData.getPassword());
         indexPage.getDriver().findElement(loginPage.getBTN_LOGIN()).click();
     }
 
