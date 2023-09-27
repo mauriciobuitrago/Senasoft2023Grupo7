@@ -22,14 +22,7 @@ public class RunnerStepDefinition {
       Map<String,String> values*/
     @When("the user enter the following personal data")
     public void theUserEnterTheFollowingPersonalData() {
-        // Write code here that turns the phrase above into concrete actions
-        // For automatic transformation, change DataTable to one of
-        // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-        // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-        // Double, Byte, Short, Long, BigInteger or BigDecimal.
-        //
-        // For other transformations you can register a DataTableType.
-
+        registerStep.createAccount();
     }
     @Then("the user should see my account icon")
     public void theUserShouldSeeMyAccountIcon() {

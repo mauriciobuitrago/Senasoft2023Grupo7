@@ -9,7 +9,6 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/register.feature",
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         glue = "com.booking.stepsdefinitions"
-
 )
 public class RegisterRunner {
 }
