@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD:Automatizacion/Screenplay/Senasoft/build/test-results/test/TEST-runners.HousingRunner.xml
+<testsuite name="runners.HousingRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-J89N0A5" time="0.0">
+  <properties/>
+  <system-out><![CDATA[
+?[33mPending scenarios:?[0m
+file:///C:/Users/SenaSOFT/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/housing.feature:2 # Housing Successful
+
+1 Scenarios (?[33m1 pending?[0m)
+6 Steps (?[36m3 skipped?[0m, ?[33m1 pending?[0m, ?[32m2 passed?[0m)
+0m50,111s
+
+
+io.cucumber.java.PendingException: TODO: implement me
+	at stepsdefinitions.HousingStepDefinition.theUserReservesTheNumberOfRoomsOfTheBestOption(HousingStepDefinition.java:42)
+	at ?.the user reserves the number of rooms of the best option(file:///C:/Users/SenaSOFT/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/housing.feature:5)
+=======
+<testsuite name="com.booking.runners.HousingRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-QFN6M8D" time="0.0">
+  <properties/>
+  <system-out><![CDATA[
+?[33mPending scenarios:?[0m
+file:///C:/Users/SenaSOFT05/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/housing.feature:2 # Housing
+
+1 Scenarios (?[33m1 pending?[0m)
+6 Steps (?[36m3 skipped?[0m, ?[33m1 pending?[0m, ?[32m2 passed?[0m)
+0m35,896s
+
+
+io.cucumber.java.PendingException: TODO: implement me
+	at com.booking.stepsdefinitions.HousingStepDefinition.theUserReservesTheNumberOfRoomsOfTheBestOption(HousingStepDefinition.java:42)
+	at ?.the user reserves the number of rooms of the best option(file:///C:/Users/SenaSOFT05/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/housing.feature:5)
+>>>>>>> c411d7511a68eb63d1ea615a4cb7b3b7d9c3d62d:Automatizacion/Screenplay/Senasoft/build/test-results/test/TEST-com.booking.runners.HousingRunner.xml
+
+
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/SenaSOFT/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/housing.feature
+[Test worker] INFO  - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+-------------------------------------------------------------------------------------
+
+[Test worker] INFO  - Test Suite Started: Housing
+<<<<<<< HEAD:Automatizacion/Screenplay/Senasoft/build/test-results/test/TEST-runners.HousingRunner.xml
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@2b23af8c: Generating report for test outcome: Housing:Housing Successful
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@6fa56c77: Generating report for test outcome: Housing:Housing Successful
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Cleanup test resources for URI file:///C:/Users/SenaSOFT/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/housing.feature
+=======
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@253461e5: Generating report for test outcome: Housing:Housing
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@c79eb83: Generating report for test outcome: Housing:Housing
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Cleanup test resources for URI file:///C:/Users/SenaSOFT05/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/housing.feature
+>>>>>>> c411d7511a68eb63d1ea615a4cb7b3b7d9c3d62d:Automatizacion/Screenplay/Senasoft/build/test-results/test/TEST-com.booking.runners.HousingRunner.xml
+]]></system-err>
+</testsuite>

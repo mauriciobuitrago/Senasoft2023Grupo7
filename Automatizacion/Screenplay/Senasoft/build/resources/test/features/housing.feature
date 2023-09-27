@@ -1,5 +1,5 @@
 Feature: Housing
-  Scenario: Housing Successful
+  Scenario: Housing
     Given that the user is on the housing page
     When the user apply the following filters
     And the user reserves the number of rooms of the best option

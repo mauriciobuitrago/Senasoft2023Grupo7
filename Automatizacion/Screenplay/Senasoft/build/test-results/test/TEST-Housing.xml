@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite name="Housing" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-09-27T19:40:06" hostname="DESKTOP-J89N0A5" time="49.565">
   <properties/>
   <testcase name="Housing Successful" classname="Housing" time="49.565">
     <failure message="io.cucumber.java.PendingException: TODO: implement me" type="io.cucumber.java.PendingException">io.cucumber.java.PendingException: TODO: implement me
 	at stepsdefinitions.HousingStepDefinition.theUserReservesTheNumberOfRoomsOfTheBestOption(HousingStepDefinition.java:42)
 	at ✽.the user reserves the number of rooms of the best option(file:///C:/Users/SenaSOFT/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/housing.feature:5)
+=======
+<testsuite name="Housing" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-09-27T19:57:57" hostname="DESKTOP-QFN6M8D" time="35.578">
+  <properties/>
+  <testcase name="Housing" classname="Housing" time="35.578">
+    <failure message="io.cucumber.java.PendingException: TODO: implement me" type="io.cucumber.java.PendingException">io.cucumber.java.PendingException: TODO: implement me
+	at com.booking.stepsdefinitions.HousingStepDefinition.theUserReservesTheNumberOfRoomsOfTheBestOption(HousingStepDefinition.java:42)
+	at ✽.the user reserves the number of rooms of the best option(file:///C:/Users/SenaSOFT05/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/housing.feature:5)
+>>>>>>> c411d7511a68eb63d1ea615a4cb7b3b7d9c3d62d
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
@@ -15,7 +24,7 @@
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Housing Successful(housing;housing-successful)
+Housing(housing;housing)
 --------------------------------------------------------------------------------
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
 [Test worker] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117
@@ -23,11 +32,19 @@ Housing Successful(housing;housing-successful)
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\SenaSOFT\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
+<<<<<<< HEAD
 Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 26501
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
 sept. 27, 2023 2:40:12 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+=======
+Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 45719
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+sept. 27, 2023 2:58:01 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+>>>>>>> c411d7511a68eb63d1ea615a4cb7b3b7d9c3d62d
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
@@ -35,7 +52,7 @@ INFORMACIÓN: Detected dialect: W3C
    | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
    |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
 
-Housing Successful
+Housing
 -----------------------------------------------------------------------------
 ]]></system-err>
 </testsuite>
