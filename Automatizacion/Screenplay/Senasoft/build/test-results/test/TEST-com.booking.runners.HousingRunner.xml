@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="runners.HousingRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-QFN6M8D" time="0.0">
+<testsuite name="com.booking.runners.HousingRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-QFN6M8D" time="0.0">
   <properties/>
   <system-out><![CDATA[
 ?[33mPending scenarios:?[0m
@@ -7,11 +7,11 @@ file:///C:/Users/SenaSOFT05/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay
 
 1 Scenarios (?[33m1 pending?[0m)
 6 Steps (?[36m3 skipped?[0m, ?[33m1 pending?[0m, ?[32m2 passed?[0m)
-0m33,066s
+0m35,896s
 
 
 io.cucumber.java.PendingException: TODO: implement me
-	at stepsdefinitions.HousingStepDefinition.theUserReservesTheNumberOfRoomsOfTheBestOption(HousingStepDefinition.java:42)
+	at com.booking.stepsdefinitions.HousingStepDefinition.theUserReservesTheNumberOfRoomsOfTheBestOption(HousingStepDefinition.java:42)
 	at ?.the user reserves the number of rooms of the best option(file:///C:/Users/SenaSOFT05/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/housing.feature:5)
 
 
@@ -34,8 +34,8 @@ io.cucumber.java.PendingException: TODO: implement me
 -------------------------------------------------------------------------------------
 
 [Test worker] INFO  - Test Suite Started: Housing
-[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@100a2ca8: Generating report for test outcome: Housing:Housing
-[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@47a6c002: Generating report for test outcome: Housing:Housing
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@253461e5: Generating report for test outcome: Housing:Housing
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@c79eb83: Generating report for test outcome: Housing:Housing
 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Cleanup test resources for URI file:///C:/Users/SenaSOFT05/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/housing.feature
 ]]></system-err>
 </testsuite>

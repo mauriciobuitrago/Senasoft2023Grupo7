@@ -1,4 +1,4 @@
-package stepsdefinitions;
+package com.booking.stepsdefinitions;
 
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;

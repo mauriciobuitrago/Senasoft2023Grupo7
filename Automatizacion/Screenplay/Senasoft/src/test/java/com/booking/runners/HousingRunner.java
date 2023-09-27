@@ -1,4 +1,4 @@
-package runners;
+package com.booking.runners;
 
 import io.cucumber.junit.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features/housing.feature",
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        glue = "stepsdefinitions"
+        glue = "com.booking.stepsdefinitions"
 )
 
 public class HousingRunner {
