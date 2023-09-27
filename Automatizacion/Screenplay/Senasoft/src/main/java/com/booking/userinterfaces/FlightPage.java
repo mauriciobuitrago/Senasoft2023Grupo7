@@ -27,7 +27,15 @@ public class FlightPage {
     public static final Target BTN_SEARCH = Target.the("button to start the flight search")
             .locatedBy("//div[@class='css-1ugzukl']/button");
 
-    public static final Target LBL_RETURN_FLIGHT = Target.the("Validation label for the flight search scenario")
+    public static final Target LBL_RETURN_FLIGHT = Target.the("validation label for the flight search scenario")
             .locatedBy("(//li[@class='Tab-module__item___IqH15'])[5]");
+
+
+    //locators to view the price breakdown of a flight
+    public static final Target ICON_QUESTION_PRICE = Target.the("question icon to display the breakdown of a price for a flight")
+            .locatedBy("//span[@class='Button-module__text___YLOOX']/span");
+
+    public static final Target LBL_PRICE_BREAKDOWN = Target.the("")
+            .locatedBy("//div[@class='Text-module__root--variant-headline_3___7x4vh css-1ebnygn']");
 
 }
