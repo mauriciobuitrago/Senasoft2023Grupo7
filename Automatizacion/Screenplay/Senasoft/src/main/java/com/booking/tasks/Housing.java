@@ -30,17 +30,40 @@ public class Housing implements Task {
                 SelectFromOptions.byValue("6").from(HousingPage.AGE_CHILDS.of("3")),
                 Click.on(HousingPage.ADD_ITEMS.of("9")),
                 Click.on(HousingPage.BTN_SEARCH),
-                Scroll.to(HousingPage.FILTER_SUSTAINABILITY),
+                Scroll.to(HousingPage.CONSULTATION_DETAILS),
+                Click.on(HousingPage.FILTER_OF_STARS.of("3")),
+                Click.on(HousingPage.FILTER_OF_STARS.of("4")),
                 Click.on(HousingPage.FILTER_OF_STARS.of("5")),
-                Click.on(HousingPage.FILTER_OF_STARS.of("7")),
-                Click.on(HousingPage.FILTER_OF_STARS.of("9"))
-        );
+                Click.on(HousingPage.ORDER_BY_DINAMIC),
+                Click.on(HousingPage.OPTION_OF_ORDER_BY_DINAMIC));
+
+                try {
+                    Thread.sleep(3000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+             actor.attemptsTo(Scroll.to(HousingPage.DESCRIBE_OF_RESULTS),
+                Click.on(HousingPage.FIRST_RESULT),
+                Switch.toNewWindow());
+
+                actor.attemptsTo(Click.on(HousingPage.PRE_RESERVATION));
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        actor.attemptsTo(Click.on(HousingPage.NUMBER_OF_ROOMS),
+                SelectFromOptions.byValue("1").from(HousingPage.NUMBER_OF_ROOMS),
+                Click.on(HousingPage.PRE_TWO_RESEVATION));
 
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
     }
 
     public static Housing filters(){

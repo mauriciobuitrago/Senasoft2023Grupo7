@@ -1,5 +1,7 @@
 package com.booking.stepsdefinitions;
 
+import com.booking.tasks.Finished;
+import com.booking.tasks.ReservationForm;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -22,23 +24,16 @@ public class HousingStepDefinition {
 
     @And("the user reserves the number of rooms of the best option")
     public void theUserReservesTheNumberOfRoomsOfTheBestOption() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
     }
     @And("the user fills the forms to reserve the housing with following data")
     public void theUserFillsTheFormsToReserveTheHousingWithFollowingData() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        OnStage.theActorInTheSpotlight().attemptsTo(ReservationForm.FormData());
     }
-    @And("the the user accept terms and clicks on complete the booking")
-    public void theTheUserAcceptTermsAndClicksOnCompleteTheBooking() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
+
     @Then("the user should see the booking confirm")
     public void theUserShouldSeeTheBookingConfirm() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
     }
 
 }

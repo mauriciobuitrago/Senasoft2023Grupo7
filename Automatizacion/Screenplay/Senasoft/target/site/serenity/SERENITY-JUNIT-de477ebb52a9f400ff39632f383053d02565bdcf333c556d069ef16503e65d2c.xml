@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Housing" skipped="0" tests="1" time="30.81" timestamp="2023-09-27 03:55:29"><testcase name="Housing"><failure message="Expected condition failed: waiting for By.cssSelector: //ul[@class='c6e9d1599e']//li[{0}] to be present (tried for 20 second(s) with 100 milliseconds interval)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-QFN6M8D', ip: '172.18.1.247', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException">Expected condition failed: waiting for By.cssSelector: //ul[@class='c6e9d1599e']//li[{0}] to be present (tried for 20 second(s) with 100 milliseconds interval)
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Housing" skipped="0" tests="1" time="105.82" timestamp="2023-09-27 06:44:02"><testcase name="Housing"><failure message="Expected condition failed: waiting for By.xpath: //*[@id='bookForm']/div[3]/div/div/div/label/span to be present (tried for 20 second(s) with 100 milliseconds interval)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-QFN6M8D', ip: '172.18.1.247', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException">Expected condition failed: waiting for By.xpath: //*[@id='bookForm']/div[3]/div/div/div/label/span to be present (tried for 20 second(s) with 100 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-QFN6M8D', ip: '172.18.1.247', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'
-Driver info: driver.version: unknown</failure><system-err>Expected condition failed: waiting for By.cssSelector: //ul[@class='c6e9d1599e']//li[{0}] to be present (tried for 20 second(s) with 100 milliseconds interval)
+Driver info: driver.version: unknown</failure><system-err>Expected condition failed: waiting for By.xpath: //*[@id='bookForm']/div[3]/div/div/div/label/span to be present (tried for 20 second(s) with 100 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-QFN6M8D', ip: '172.18.1.247', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'
 Driver info: driver.version: unknown&#13;
-com.booking.tasks.Housing.performAs(Housing.java:16)&#13;
-com.booking.stepsdefinitions.HousingStepDefinition.theUserApplyTheFollowingFilters(HousingStepDefinition.java:20)&#13;
+com.booking.tasks.Finished.performAs(Finished.java:13)&#13;
+com.booking.stepsdefinitions.HousingStepDefinition.theTheUserAcceptTermsAndClicksOnCompleteTheBooking(HousingStepDefinition.java:35)&#13;
 io.cucumber.java.Invoker.doInvoke(Invoker.java:66)&#13;
 io.cucumber.java.Invoker.invoke(Invoker.java:24)&#13;
 io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)&#13;
