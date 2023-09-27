@@ -1,82 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - Class Housing</title>
-<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
-<link href="../css/style.css" rel="stylesheet" type="text/css"/>
-<script src="../js/report.js" type="text/javascript"></script>
-</head>
-<body>
-<div id="content">
-<h1>Class Housing</h1>
-<div class="breadcrumbs">
-<a href="../index.html">all</a> &gt; 
-<a href="../packages/default-package.html">default-package</a> &gt; Housing</div>
-<div id="summary">
-<table>
-<tr>
-<td>
-<div class="summaryGroup">
-<table>
-<tr>
-<td>
-<div class="infoBox" id="tests">
-<div class="counter">1</div>
-<p>tests</p>
-</div>
-</td>
-<td>
-<div class="infoBox" id="failures">
-<div class="counter">1</div>
-<p>failures</p>
-</div>
-</td>
-<td>
-<div class="infoBox" id="ignored">
-<div class="counter">0</div>
-<p>ignored</p>
-</div>
-</td>
-<td>
-<div class="infoBox" id="duration">
-<div class="counter">31.608s</div>
-<p>duration</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</td>
-<td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
-<p>successful</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div id="tabs">
-<ul class="tabLinks">
-<li>
-<a href="#tab0">Failed tests</a>
-</li>
-<li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard error</a>
-</li>
-</ul>
-<div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="Housing"></a>
-<h3 class="failures">Housing</h3>
-<span class="code">
-<pre>net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException: Expected condition failed: waiting for By.cssSelector: //ul[@class='c6e9d1599e']//li[{0}] to be present (tried for 20 second(s) with 100 milliseconds interval)
+<?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD:Automatizacion/Screenplay/Senasoft/build/test-results/test/TEST-com.booking.runners.HousingRunner.xml
+<testsuite name="com.booking.runners.HousingRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-QFN6M8D" time="0.0">
+  <properties/>
+  <system-out><![CDATA[
+?[31mFailed scenarios:?[0m
+file:///C:/Users/SenaSOFT05/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/housing.feature:2 # Housing
+
+1 Scenarios (?[31m1 failed?[0m)
+6 Steps (?[31m1 failed?[0m, ?[36m4 skipped?[0m, ?[32m1 passed?[0m)
+0m31,907s
+
+
+net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException: Expected condition failed: waiting for By.cssSelector: //ul[@class='c6e9d1599e']//li[{0}] to be present (tried for 20 second(s) with 100 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-QFN6M8D', ip: '172.18.1.247', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'
 Driver info: driver.version: unknown
@@ -119,7 +54,7 @@ Driver info: driver.version: unknown
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
 	at com.booking.stepsdefinitions.HousingStepDefinition.theUserApplyTheFollowingFilters(HousingStepDefinition.java:20)
-	at ✽.the user apply the following filters(file:///C:/Users/SenaSOFT05/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/housing.feature:4)
+	at ?.the user apply the following filters(file:///C:/Users/SenaSOFT05/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/housing.feature:4)
 Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.cssSelector: //ul[@class='c6e9d1599e']//li[{0}] to be present (tried for 20 second(s) with 100 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-QFN6M8D', ip: '172.18.1.247', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'
@@ -230,74 +165,48 @@ Driver info: driver.version: unknown
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.base/java.lang.Thread.run(Thread.java:829)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
-<h2>Tests</h2>
-<table>
-<thead>
-<tr>
-<th>Test</th>
-<th>Duration</th>
-<th>Result</th>
-</tr>
-</thead>
-<tr>
-<td class="failures">Housing</td>
-<td class="failures">31.608s</td>
-<td class="failures">failed</td>
-</tr>
-</table>
-</div>
-<div id="tab2" class="tab">
-<h2>Standard error</h2>
-<span class="code">
-<pre>[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/SenaSOFT05/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/housing.feature
+
+
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/SenaSOFT05/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/housing.feature
+=======
+<testsuite name="com.booking.runners.FlightsRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-J89N0A5" time="0.0">
+  <properties/>
+  <system-out><![CDATA[
+1 Scenarios (?[32m1 passed?[0m)
+3 Steps (?[32m3 passed?[0m)
+0m23,306s
+
+
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/SenaSOFT/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/flights.feature
+>>>>>>> 93c6af2121af5e827138b0704c4fea7b9d548560:Automatizacion/Screenplay/Senasoft/build/test-results/test/TEST-com.booking.runners.FlightsRunner.xml
 [Test worker] INFO  - 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Housing(housing;housing)
---------------------------------------------------------------------------------
-[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
-[Test worker] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117
-[Test worker] WARN io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117)
-[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\SenaSOFT05\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
-[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
-[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 31078
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-sept. 27, 2023 3:55:32 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMACIÓN: Detected dialect: W3C
-[Test worker] ERROR  - 
-  _____   ___   ___   _____     ___     _     ___   _      ___   ___  
- |_   _| | __| / __| |_   _|   | __|   /_\   |_ _| | |    | __| |   \ 
-   | |   | _|  \__ \   | |     | _|   / _ \   | |  | |__  | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___| |____| |___| |___/ 
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+-------------------------------------------------------------------------------------
 
-Housing
------------------------------------------------------------------------
-[Test worker] ERROR  -     Test failed at step: User clicks on icons to access a service
-[Test worker] ERROR  -     Expected condition failed: waiting for By.cssSelector: //ul[@class='c6e9d1599e']//li[{0}] to be present (tried for 20 second(s) with 100 milliseconds interval)Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: 'DESKTOP-QFN6M8D', ip: '172.18.1.247', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'Driver info: driver.version: unknown
-</pre>
-</span>
-</div>
-</div>
-<div id="footer">
-<p>
-<div>
-<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
-<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
-</label>
-</div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at 27/09/2023, 3:56:02 p. m.</p>
-</div>
-</div>
-</body>
-</html>
+<<<<<<< HEAD:Automatizacion/Screenplay/Senasoft/build/test-results/test/TEST-com.booking.runners.HousingRunner.xml
+[Test worker] INFO  - Test Suite Started: Housing
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@5834f3fe: Generating report for test outcome: Housing:Housing
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@303be974: Generating report for test outcome: Housing:Housing
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Cleanup test resources for URI file:///C:/Users/SenaSOFT05/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/housing.feature
+=======
+[Test worker] INFO  - Test Suite Started: Testing of the flights module
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@30c0bceb: Generating report for test outcome: Testing of the flights module:Search for flights for a specific destination
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@6c5002e1: Generating report for test outcome: Testing of the flights module:Search for flights for a specific destination
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Cleanup test resources for URI file:///C:/Users/SenaSOFT/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/flights.feature
+>>>>>>> 93c6af2121af5e827138b0704c4fea7b9d548560:Automatizacion/Screenplay/Senasoft/build/test-results/test/TEST-com.booking.runners.FlightsRunner.xml
+]]></system-err>
+</testsuite>
