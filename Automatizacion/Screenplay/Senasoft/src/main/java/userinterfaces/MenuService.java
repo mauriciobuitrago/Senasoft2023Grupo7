@@ -10,7 +10,7 @@ public class MenuService {
             .locatedBy("(//span[@class='eedba9e88a'])[14]");
 
     public static final Target NAVBAR_SEARCH_COUSING = Target.the("navigation bar to search a housing")
-            .locatedBy("//div[contains(@class,'ffb9c3d6a3')]/div[{0}]");
+            .locatedBy("//input[@id=':re:']");
 
 
 }

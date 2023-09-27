@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">13.114s</div>
+<div class="counter">17.146s</div>
 <p>duration</p>
 </div>
 </td>
@@ -76,28 +76,15 @@
 <a name="Housing Successful"></a>
 <h3 class="failures">Housing Successful</h3>
 <span class="code">
-<pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;li class=&quot;d37611a2e0 d0607887c7&quot;&gt;...&lt;/li&gt; is not clickable at point (188, 90). Other element would receive the click: &lt;div class=&quot;eb33ef7c47&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=117.0.5938.92)
+<pre>org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;input&quot;
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-QFN6M8D', ip: '172.18.1.247', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: C:\Users\SENASO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63638}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 463187a7192a957f261c524535a3f451
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1270)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$65oWkWqU.performAs$accessor$Ucx4WppT(Unknown Source)
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:48)
+	at net.serenitybdd.core.pages.DropdownSelector.byIndex(DropdownSelector.java:47)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.selectByIndex(WebElementFacadeImpl.java:966)
+	at net.serenitybdd.screenplay.actions.selectactions.SelectByIndexFromTarget.performAs(SelectByIndexFromTarget.java:19)
+	at net.serenitybdd.screenplay.actions.selectactions.SelectByIndexFromTarget$ByteBuddy$46ie9S0N.performAs$accessor$5wzydVHh(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -109,12 +96,12 @@ Session ID: 463187a7192a957f261c524535a3f451
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
 	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$65oWkWqU.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.actions.selectactions.SelectByIndexFromTarget$ByteBuddy$46ie9S0N.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
-	at tasks.Housing.performAs(Housing.java:14)
-	at tasks.Housing$ByteBuddy$4ALruZgQ.performAs$accessor$IxbdnSSO(Unknown Source)
+	at tasks.Housing.performAs(Housing.java:18)
+	at tasks.Housing$ByteBuddy$mZ4Kl8gj.performAs$accessor$O7HCEgLI(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -126,7 +113,7 @@ Session ID: 463187a7192a957f261c524535a3f451
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
 	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at tasks.Housing$ByteBuddy$4ALruZgQ.performAs(Unknown Source)
+	at tasks.Housing$ByteBuddy$mZ4Kl8gj.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
@@ -148,7 +135,7 @@ Session ID: 463187a7192a957f261c524535a3f451
 </thead>
 <tr>
 <td class="failures">Housing Successful</td>
-<td class="failures">13.114s</td>
+<td class="failures">17.146s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -171,11 +158,11 @@ Housing Successful(housing;housing-successful)
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\SenaSOFT05\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 49450
+Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 7451
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-sept. 27, 2023 11:47:21 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+sept. 27, 2023 12:09:23 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] ERROR  - 
   _____   ___   ___   _____     ___   ___   ___    ___    ___ 
@@ -185,8 +172,8 @@ INFORMACIÓN: Detected dialect: W3C
 
 Housing Successful
 ---------------------------------------------------------------
-[Test worker] ERROR  -     Test failed at step: User clicks on icons to access a service
-[Test worker] ERROR  -     element click intercepted: Element &lt;li class=&quot;d37611a2e0 d0607887c7&quot;&gt;...&lt;/li&gt; is not clickable at point (188, 90). Other element would receive the click: &lt;div class=&quot;eb33ef7c47&quot;&gt;...&lt;/div&gt;
+[Test worker] ERROR  -     Test failed at step: User selects index 1 in navigation bar to search a housing
+[Test worker] ERROR  -     Element should have been &quot;select&quot; but was &quot;input&quot;
 </pre>
 </span>
 </div>
@@ -198,7 +185,7 @@ Housing Successful
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at 27/09/2023, 11:47:32 a. m.</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at 27/09/2023, 12:09:38 p. m.</p>
 </div>
 </div>
 </body>
