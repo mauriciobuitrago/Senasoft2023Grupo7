@@ -9,7 +9,8 @@ import userinterfaces.MenuService;
 public class Housing implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Click.on(MenuService.IconsService));
+        actor.attemptsTo(Click.on(MenuService.IconsService),
+                Click.on(MenuService.ASK_MODEL_VIEW));
     }
 
     public static Housing filters(){
