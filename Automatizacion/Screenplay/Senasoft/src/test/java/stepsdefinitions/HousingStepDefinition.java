@@ -11,6 +11,7 @@ import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
+import tasks.Housing;
 
 public class HousingStepDefinition {
 
@@ -22,17 +23,19 @@ public class HousingStepDefinition {
         OnStage.setTheStage(Cast.ofStandardActors());
         OnStage.theActorCalled("User");
         OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(hisBrowser));
+        hisBrowser.manage().window().maximize();
     }
 
     @Given("that the user is on the housing page")
     public void thatTheUserIsOnTheHousingPage() {
         OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://www.booking.com/index.es.html"));
     }
+
     @When("the user apply the following filters")
     public void theUserApplyTheFollowingFilters() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        OnStage.theActorInTheSpotlight().attemptsTo(Housing.filters());
     }
+
     @And("the user reserves the number of rooms of the best option")
     public void theUserReservesTheNumberOfRoomsOfTheBestOption() {
         // Write code here that turns the phrase above into concrete actions

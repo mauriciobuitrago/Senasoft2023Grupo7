@@ -6,13 +6,13 @@
 file:///C:/Users/SenaSOFT05/Downloads/Senasoft/src/test/resources/features/housing.feature:2 # Housing Successful
 
 1 Scenarios (?[33m1 pending?[0m)
-6 Steps (?[36m4 skipped?[0m, ?[33m1 pending?[0m, ?[32m1 passed?[0m)
-0m10,138s
+6 Steps (?[36m3 skipped?[0m, ?[33m1 pending?[0m, ?[32m2 passed?[0m)
+0m13,920s
 
 
 io.cucumber.java.PendingException: TODO: implement me
-	at stepsdefinitions.HousingStepDefinition.theUserApplyTheFollowingFilters(HousingStepDefinition.java:34)
-	at ?.the user apply the following filters(file:///C:/Users/SenaSOFT05/Downloads/Senasoft/src/test/resources/features/housing.feature:4)
+	at stepsdefinitions.HousingStepDefinition.theUserReservesTheNumberOfRoomsOfTheBestOption(HousingStepDefinition.java:42)
+	at ?.the user reserves the number of rooms of the best option(file:///C:/Users/SenaSOFT05/Downloads/Senasoft/src/test/resources/features/housing.feature:5)
 
 
 ]]></system-out>
@@ -34,8 +34,8 @@ io.cucumber.java.PendingException: TODO: implement me
 -------------------------------------------------------------------------------------
 
 [Test worker] INFO  - Test Suite Started: Housing
-[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@57dbf813: Generating report for test outcome: Housing:Housing Successful
-[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@4452c1e5: Generating report for test outcome: Housing:Housing Successful
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@3a366fa4: Generating report for test outcome: Housing:Housing Successful
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@613beef3: Generating report for test outcome: Housing:Housing Successful
 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Cleanup test resources for URI file:///C:/Users/SenaSOFT05/Downloads/Senasoft/src/test/resources/features/housing.feature
 ]]></system-err>
 </testsuite>
