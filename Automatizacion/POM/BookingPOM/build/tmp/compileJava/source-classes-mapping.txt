@@ -1,0 +1,4 @@
+com/booking/steps/RegisterStep.java
+ com.booking.steps.RegisterStep
+com/booking/pageobjects/RegisterPage.java
+ com.booking.pageobjects.RegisterPage
