@@ -49,10 +49,15 @@ public class HousingPage {
             .locatedBy("(//button[contains(@class,'a83ed08757')])[3]");
 
 
-    public static final Target FILTER_PRICE = Target.the("filter the price")
+    public static final Target FILTER_PRICE = Target.the("filter by price")
             .locatedBy("(//*[@class='d819a91462'])[1]");
 
-    /*public static final Target FILTER_OF_STARS = Target*/
+    public static final Target FILTER_SUSTAINABILITY = Target.the("filter by sustainability")
+            .locatedBy("//*[@id='filter_group_SustainablePropertyFilter_:rad:']");
+
+    public static final Target FILTER_OF_STARS = Target.the("filter by stars")
+            .locatedBy("//div[@id='filter_group_class_:raf:']/div[{0}]");
+
 
 
 }

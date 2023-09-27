@@ -30,7 +30,10 @@ public class Housing implements Task {
                 SelectFromOptions.byValue("6").from(HousingPage.AGE_CHILDS.of("3")),
                 Click.on(HousingPage.ADD_ITEMS.of("9")),
                 Click.on(HousingPage.BTN_SEARCH),
-                Scroll.to(HousingPage.CONSULTATION_DETAILS)
+                Scroll.to(HousingPage.FILTER_SUSTAINABILITY),
+                Click.on(HousingPage.FILTER_OF_STARS.of("5")),
+                Click.on(HousingPage.FILTER_OF_STARS.of("7")),
+                Click.on(HousingPage.FILTER_OF_STARS.of("9"))
         );
 
         try {
