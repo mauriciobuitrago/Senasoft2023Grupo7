@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-09-2023 15:46</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-09-2023 17:25</span>
     <br style="clear:left"/>
 </div>
 
@@ -189,9 +189,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Search for flights for a specific destination
+                                <span class="failing-color">Search for flights for a specific destination
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -208,16 +208,83 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: Expected: is (false) but: was (true)</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.booking.stepsdefinitions.FlightsStepDefinition.theUserShouldSeeTheResultsOfTheirSearch(FlightsStepDefinition.java:41)<br />✽.the user should see the results of their search(file:///C:/Users/SenaSOFT/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/flights.feature:6)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource465991347655968418.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
                 <img src="80a03f9655637b408f7179edcde05673c8ef3405b870d4ea162e18300d790bcf.png" title=" Given that the user is on the &quot;flights&quot; page" width="1366"/>
-                <img src="8de340300bc72ad786ca594d0880a861c2a6fc673e5a9daf590f6945e1584afa.png" title=" User click on service button" width="1366"/>
-                <img src="8de340300bc72ad786ca594d0880a861c2a6fc673e5a9daf590f6945e1584afa.png" title=" User clicks on icons to access a service" width="1366"/>
-                <img src="ee550ac7398d7d0debf06845ce02380b795fc12bf31891c2801b222f93341fea.png" title=" User clicks on icons to access a service (completed)" width="1366"/>
-                <img src="ee550ac7398d7d0debf06845ce02380b795fc12bf31891c2801b222f93341fea.png" title=" User click on service button (completed)" width="1366"/>
-                <img src="ee550ac7398d7d0debf06845ce02380b795fc12bf31891c2801b222f93341fea.png" title=" Given that the user is on the &quot;flights&quot; page (completed)" width="1366"/>
-                <img src="ee550ac7398d7d0debf06845ce02380b795fc12bf31891c2801b222f93341fea.png" title=" When the user enter the data for her search and clicks on search" width="1366"/>
-                <img src="ee550ac7398d7d0debf06845ce02380b795fc12bf31891c2801b222f93341fea.png" title=" Then the user should see the results of their search: <span class='success-color'>SUCCESS</span>" width="1366"/>
+                <img src="47b917d3c727cb63b9d0861ed078c3515c7738bcb754285042a2ce4bcb2b48dc.png" title=" User click on service button" width="1366"/>
+                <img src="47b917d3c727cb63b9d0861ed078c3515c7738bcb754285042a2ce4bcb2b48dc.png" title=" User clicks on " width="1366"/>
+                <img src="b7a3aace8d8239a80989355653b422f36f632f2679d5a6eac5d9c8f896ff639a.png" title=" User clicks on  (completed)" width="1366"/>
+                <img src="b7a3aace8d8239a80989355653b422f36f632f2679d5a6eac5d9c8f896ff639a.png" title=" User clicks on icons to access a service" width="1366"/>
+                <img src="04bbba7e036715e888b6d51b616bb0deaed62fac8eaec794f4a527d00479b17b.png" title=" User clicks on icons to access a service (completed)" width="1366"/>
+                <img src="04bbba7e036715e888b6d51b616bb0deaed62fac8eaec794f4a527d00479b17b.png" title=" User click on service button (completed)" width="1366"/>
+                <img src="04bbba7e036715e888b6d51b616bb0deaed62fac8eaec794f4a527d00479b17b.png" title=" Given that the user is on the &quot;flights&quot; page (completed)" width="1366"/>
+                <img src="523452616f7aef341a3fcd23de1c0a9eb15f0ce600a07b3c5f1f99c6062e5096.png" title=" When the user enter the data for her search and clicks on search" width="1366"/>
+                <img src="523452616f7aef341a3fcd23de1c0a9eb15f0ce600a07b3c5f1f99c6062e5096.png" title=" User select specific flights" width="1366"/>
+                <img src="523452616f7aef341a3fcd23de1c0a9eb15f0ce600a07b3c5f1f99c6062e5096.png" title=" User clicks on dropdown list to select the city of origin" width="1366"/>
+                <img src="f9221b83656fc29a7821eac78153dbe814f47d6ed484ce7edba47cd4e4d3ab59.png" title=" User clicks on dropdown list to select the city of origin (completed)" width="1366"/>
+                <img src="f9221b83656fc29a7821eac78153dbe814f47d6ed484ce7edba47cd4e4d3ab59.png" title=" User clicks on " width="1366"/>
+                <img src="e0fccefd73d068888a8c1a440a9101529fb1fbf88f43283038d29996477d38a8.png" title=" User clicks on  (completed)" width="1366"/>
+                <img src="e0fccefd73d068888a8c1a440a9101529fb1fbf88f43283038d29996477d38a8.png" title=" User enters 'bogota' into text field to enter the city of origin" width="1366"/>
+                <img src="6c7c1e43a6aab951636c638faaf590dc7ca2684b44d0d239455366369a7be27a.png" title=" User enters 'bogota' into text field to enter the city of origin (completed)" width="1366"/>
+                <img src="6c7c1e43a6aab951636c638faaf590dc7ca2684b44d0d239455366369a7be27a.png" title=" User clicks on searched city tag" width="1366"/>
+                <img src="9bcd013272c097c982021482a9fb3d81889ff6ec5c11b3399651b3cd52fd53e7.png" title=" User clicks on searched city tag (completed)" width="1366"/>
+                <img src="9bcd013272c097c982021482a9fb3d81889ff6ec5c11b3399651b3cd52fd53e7.png" title=" User clicks on text field to enter the destination city" width="1366"/>
+                <img src="26de601b3a87907224141ac88c2ae2bc270e03c9c435b5cac94d358a2c3f995f.png" title=" User clicks on text field to enter the destination city (completed)" width="1366"/>
+                <img src="26de601b3a87907224141ac88c2ae2bc270e03c9c435b5cac94d358a2c3f995f.png" title=" User enters 'tolima' into text field to enter the city of origin" width="1366"/>
+                <img src="fc70006eaee6996dd31ba2543ea257a4201f748ea77195af77922d408fc8f5e9.png" title=" User enters 'tolima' into text field to enter the city of origin (completed)" width="1366"/>
+                <img src="fc70006eaee6996dd31ba2543ea257a4201f748ea77195af77922d408fc8f5e9.png" title=" User clicks on searched city tag" width="1366"/>
+                <img src="fbf89ce199eb71f708c70195297baab3c935f4eeb5f7ebc777b03d2204f1f36d.png" title=" User clicks on searched city tag (completed)" width="1366"/>
+                <img src="fbf89ce199eb71f708c70195297baab3c935f4eeb5f7ebc777b03d2204f1f36d.png" title=" User clicks on " width="1366"/>
+                <img src="3c9d326cf3af729144efb4f6e7b52f851b4b1a5a0002ed4260dbea15dff506cd.png" title=" User clicks on  (completed)" width="1366"/>
+                <img src="3c9d326cf3af729144efb4f6e7b52f851b4b1a5a0002ed4260dbea15dff506cd.png" title=" User clicks on " width="1366"/>
+                <img src="bf87ea51deceeb76ebb6e34c1650d0db51634497a0f5f741951ba84245d8427c.png" title=" User clicks on  (completed)" width="1366"/>
+                <img src="bf87ea51deceeb76ebb6e34c1650d0db51634497a0f5f741951ba84245d8427c.png" title=" User clicks on " width="1366"/>
+                <img src="d3bf5d620b325dc976fab5bee051d35c18197990cc4fcc2c7915f1679c3f33b6.png" title=" User clicks on  (completed)" width="1366"/>
+                <img src="d3bf5d620b325dc976fab5bee051d35c18197990cc4fcc2c7915f1679c3f33b6.png" title=" User clicks on " width="1366"/>
+                <img src="91b5635186a7a686c8f61d11f8adabb6cef5b4e939645a1a00a4e136f538efdb.png" title=" User clicks on  (completed)" width="1366"/>
+                <img src="91b5635186a7a686c8f61d11f8adabb6cef5b4e939645a1a00a4e136f538efdb.png" title=" User select specific flights (completed)" width="1366"/>
+                <img src="3d8641b5c8e8302f10fa1e2d642af9323b685772c2aaca291924fbd72ade1f39.png" title=" When the user enter the data for her search and clicks on search (completed)" width="1366"/>
+                <img src="3d8641b5c8e8302f10fa1e2d642af9323b685772c2aaca291924fbd72ade1f39.png" title=" Then the user should see the results of their search" width="1366"/>
+                <img src="3d8641b5c8e8302f10fa1e2d642af9323b685772c2aaca291924fbd72ade1f39.png" title=" Then search specific flight should be (false): <span class='failing-color'>FAILURE</span>" width="1366"/>
             </div>
         </div>
 
