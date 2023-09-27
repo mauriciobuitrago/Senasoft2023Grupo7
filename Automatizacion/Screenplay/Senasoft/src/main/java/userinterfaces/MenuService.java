@@ -9,6 +9,7 @@ public class MenuService {
     public static final Target ASK_MODEL_VIEW = Target.the("action to ask a modal view")
             .locatedBy("(//span[@class='eedba9e88a'])[14]");
 
-    public static final Target NAVBAR_SEARCH_COUSING
+    public static final Target NAVBAR_SEARCH_COUSING = Target.the("")
+
 
 }
