@@ -11,7 +11,7 @@ import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
-import tasks.Housing;
+import com.booking.tasks.Housing;
 
 public class HousingStepDefinition {
 

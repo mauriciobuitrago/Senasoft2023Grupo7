@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Housing" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-09-27T19:18:26" hostname="DESKTOP-QFN6M8D" time="32.825">
+<testsuite name="Housing" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-09-27T19:52:49" hostname="DESKTOP-QFN6M8D" time="32.748">
   <properties/>
-  <testcase name="Housing Successful" classname="Housing" time="32.825">
+  <testcase name="Housing" classname="Housing" time="32.748">
     <failure message="io.cucumber.java.PendingException: TODO: implement me" type="io.cucumber.java.PendingException">io.cucumber.java.PendingException: TODO: implement me
 	at stepsdefinitions.HousingStepDefinition.theUserReservesTheNumberOfRoomsOfTheBestOption(HousingStepDefinition.java:42)
 	at ✽.the user reserves the number of rooms of the best option(file:///C:/Users/SenaSOFT05/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/housing.feature:5)
@@ -15,7 +15,7 @@
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Housing Successful(housing;housing-successful)
+Housing(housing;housing)
 --------------------------------------------------------------------------------
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
 [Test worker] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117
@@ -23,11 +23,11 @@ Housing Successful(housing;housing-successful)
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\SenaSOFT05\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 29003
+Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 10671
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-sept. 27, 2023 2:18:30 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+sept. 27, 2023 2:52:54 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
@@ -35,7 +35,7 @@ INFORMACIÓN: Detected dialect: W3C
    | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
    |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
 
-Housing Successful
+Housing
 -----------------------------------------------------------------------------
 ]]></system-err>
 </testsuite>

@@ -1,4 +1,4 @@
-package userinterfaces;
+package com.booking.userinterfaces;
 
 import net.serenitybdd.screenplay.targets.Target;
 

@@ -1,12 +1,12 @@
-package tasks;
+package com.booking.tasks;
 
 import io.cucumber.java.da.Men;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.*;
-import userinterfaces.HousingPage;
-import userinterfaces.MenuService;
+import com.booking.userinterfaces.HousingPage;
+import com.booking.userinterfaces.MenuService;
 
 import java.awt.*;
 
@@ -29,8 +29,8 @@ public class Housing implements Task {
                 Click.on(HousingPage.AGE_CHILDS.of("3")),
                 SelectFromOptions.byValue("6").from(HousingPage.AGE_CHILDS.of("3")),
                 Click.on(HousingPage.ADD_ITEMS.of("9")),
-                Click.on(HousingPage.BTN_SEARCH)
-
+                Click.on(HousingPage.BTN_SEARCH),
+                Scroll.to(HousingPage.CONSULTATION_DETAILS)
         );
 
         try {
