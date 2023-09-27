@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Housing" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-09-27T16:34:02" hostname="DESKTOP-QFN6M8D" time="12.965">
+<testsuite name="Housing" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-09-27T16:47:16" hostname="DESKTOP-QFN6M8D" time="13.114">
   <properties/>
-  <testcase name="Housing Successful" classname="Housing" time="12.965">
-    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;li class=&quot;d37611a2e0 d0607887c7&quot;&gt;...&lt;/li&gt; is not clickable at point (188, 90). Other element would receive the click: &lt;div class=&quot;eb33ef7c47&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=117.0.5938.92)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-QFN6M8D', ip: '172.18.1.247', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: C:\Users\SENASO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63176}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 34de35ebf09154ff44cc3ff2bb23fef2" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;li class=&quot;d37611a2e0 d0607887c7&quot;&gt;...&lt;/li&gt; is not clickable at point (188, 90). Other element would receive the click: &lt;div class=&quot;eb33ef7c47&quot;&gt;...&lt;/div&gt;
+  <testcase name="Housing Successful" classname="Housing" time="13.114">
+    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;li class=&quot;d37611a2e0 d0607887c7&quot;&gt;...&lt;/li&gt; is not clickable at point (188, 90). Other element would receive the click: &lt;div class=&quot;eb33ef7c47&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=117.0.5938.92)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-QFN6M8D', ip: '172.18.1.247', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: C:\Users\SENASO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63638}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 463187a7192a957f261c524535a3f451" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;li class=&quot;d37611a2e0 d0607887c7&quot;&gt;...&lt;/li&gt; is not clickable at point (188, 90). Other element would receive the click: &lt;div class=&quot;eb33ef7c47&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=117.0.5938.92)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-QFN6M8D', ip: '172.18.1.247', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: C:\Users\SENASO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63176}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 34de35ebf09154ff44cc3ff2bb23fef2
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: C:\Users\SENASO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63638}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 463187a7192a957f261c524535a3f451
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -23,7 +23,7 @@ Session ID: 34de35ebf09154ff44cc3ff2bb23fef2
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
 	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1270)
 	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$YkfwsauJ.performAs$accessor$ATdCLM2E(Unknown Source)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$65oWkWqU.performAs$accessor$Ucx4WppT(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -35,12 +35,12 @@ Session ID: 34de35ebf09154ff44cc3ff2bb23fef2
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
 	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$YkfwsauJ.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$65oWkWqU.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
-	at tasks.Housing.performAs(Housing.java:12)
-	at tasks.Housing$ByteBuddy$dtyNOQSZ.performAs$accessor$7D5af8J7(Unknown Source)
+	at tasks.Housing.performAs(Housing.java:14)
+	at tasks.Housing$ByteBuddy$4ALruZgQ.performAs$accessor$IxbdnSSO(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -52,7 +52,7 @@ Session ID: 34de35ebf09154ff44cc3ff2bb23fef2
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
 	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at tasks.Housing$ByteBuddy$dtyNOQSZ.performAs(Unknown Source)
+	at tasks.Housing$ByteBuddy$4ALruZgQ.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
@@ -76,11 +76,11 @@ Housing Successful(housing;housing-successful)
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\SenaSOFT05\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 24956
+Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 49450
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-sept. 27, 2023 11:34:07 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+sept. 27, 2023 11:47:21 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] ERROR  - 
   _____   ___   ___   _____     ___   ___   ___    ___    ___ 
