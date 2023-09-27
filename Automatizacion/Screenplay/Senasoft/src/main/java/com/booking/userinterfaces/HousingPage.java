@@ -4,6 +4,10 @@ import net.serenitybdd.screenplay.targets.Target;
 
 public class HousingPage {
 
+    //modal view
+    public static final Target MODAL_VIEW = Target.the("")
+            .locatedBy("(//span[@class='eedba9e88a'])[14]");
+
     // Targets for automatization a flow critic
     public static final Target NAVBAR_SEARCH_COUSING = Target.the("navigation bar to search a housing")
             .locatedBy("//input[@id=':re:']");
