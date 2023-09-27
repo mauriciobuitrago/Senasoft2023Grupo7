@@ -22,7 +22,7 @@ public class RegisterStep {
         indexPage.getDriver().findElement(registerPage.getTXT_PASSWORD()).sendKeys("Senasoft2023*");
         indexPage.getDriver().findElement(registerPage.getBTN_LOGIN()).click();
         try {
-            Thread.sleep(50000);
+            Thread.sleep(80000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
