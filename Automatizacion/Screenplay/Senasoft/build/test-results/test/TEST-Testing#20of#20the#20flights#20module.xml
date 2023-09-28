@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Testing of the flights module" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-09-28T01:09:23" hostname="DESKTOP-J89N0A5" time="89.101">
+<testsuite name="Testing of the flights module" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-09-28T12:19:49" hostname="DESKTOP-J89N0A5" time="133.94">
   <properties/>
-  <testcase name="Search for flights for a specific destination" classname="Testing of the flights module" time="24.313"/>
-  <testcase name="Viewing price breakdown for a flight" classname="Testing of the flights module" time="19.519"/>
-  <testcase name="view flight details" classname="Testing of the flights module" time="20.581"/>
-  <testcase name="validate flight selection" classname="Testing of the flights module" time="24.688"/>
+  <testcase name="Search for flights for a specific destination" classname="Testing of the flights module" time="40.251"/>
+  <testcase name="Viewing price breakdown for a flight" classname="Testing of the flights module" time="29.086"/>
+  <testcase name="view flight details" classname="Testing of the flights module" time="31.464"/>
+  <testcase name="validate flight selection" classname="Testing of the flights module" time="33.139"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/SenaSOFT/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/flights.feature
 [Test worker] INFO  - 
@@ -21,11 +21,11 @@ Search for flights for a specific destination(testing-of-the-flights-module;sear
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\SenaSOFT\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 9941
+Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 37577
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-sept. 27, 2023 8:09:27 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+sept. 28, 2023 7:19:58 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -50,11 +50,11 @@ Viewing price breakdown for a flight(testing-of-the-flights-module;viewing-price
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\SenaSOFT\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 6262
+Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 16327
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-sept. 27, 2023 8:09:49 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+sept. 28, 2023 7:20:32 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -79,11 +79,11 @@ view flight details(testing-of-the-flights-module;view-flight-details)
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\SenaSOFT\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 28889
+Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 20165
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-sept. 27, 2023 8:10:09 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+sept. 28, 2023 7:21:01 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -108,11 +108,11 @@ validate flight selection(testing-of-the-flights-module;validate-flight-selectio
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\SenaSOFT\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 50378
+Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 50368
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-sept. 27, 2023 8:10:29 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+sept. 28, 2023 7:21:32 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
