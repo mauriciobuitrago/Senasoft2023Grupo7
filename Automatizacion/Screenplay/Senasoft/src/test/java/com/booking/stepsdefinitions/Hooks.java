@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 
 public class Hooks {
 
+    //driver initialization and scenario/actor preparation for each automated test
     @Managed
     WebDriver hisBrowser;
 
@@ -17,7 +18,6 @@ public class Hooks {
         OnStage.setTheStage(Cast.ofStandardActors());
         OnStage.theActorCalled("User");
         OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(hisBrowser));
-        hisBrowser.manage().window().maximize();
     }
 
 }
