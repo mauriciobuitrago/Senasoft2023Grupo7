@@ -1,8 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Testing of the tourist activities module" skipped="0" tests="1" time="32.28" timestamp="2023-09-28 10:25:29"><testcase name=""><failure message="&#13;&#10;Expected: is &lt;false&gt;&#13;&#10;     but: was &lt;true&gt;" type="java.lang.AssertionError">&#13;
-Expected: is &lt;false&gt;&#13;
-     but: was &lt;true&gt;</failure><system-err>&#13;
-Expected: is &lt;false&gt;&#13;
-     but: was &lt;true&gt;&#13;
-com.booking.stepsdefinitions.TouristActivitiesStepDefinition.theUserShouldSeeTheResultsForTheirSearch(TouristActivitiesStepDefinition.java:29)&#13;
-✽.the user should see the results for their search(file:///C:/Users/SenaSOFT/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/tourist_activities.feature:5)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Testing of the tourist activities module" skipped="0" tests="1" time="46.62" timestamp="2023-09-28 10:55:08"><testcase name=""/></testsuite>

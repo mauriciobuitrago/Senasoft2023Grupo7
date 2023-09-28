@@ -22,4 +22,9 @@ public class TouristActivitiesPage {
 
     public static final Target BTN_HIGHLIGHTS = Target.the("Button to search for featured tourist activities ")
             .locatedBy("(//label[@class='a53cbfa6de a454023a93'])[1]");
+
+    //locators to check availability
+    public static final Target BTN_CHECK_AVAILABILITY = Target.the("button to check the availability of a tourist attraction")
+            .locatedBy("(//div[@class='css-spkfbn'])[1]");
+
 }
