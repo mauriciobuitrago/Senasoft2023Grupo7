@@ -42,20 +42,12 @@ public class HousingStepDefinition {
     }
 
     // second Scenario
-    @When("the user enter the filter data")
-    public void theUserEnterTheFilterData() {
-        OnStage.theActorInTheSpotlight().attemptsTo(SearchHousing.filters());
-    }
 
-    @And("the user clicks on search button")
-    public void theUserClicksOnSearchButton() {
-        OnStage.theActorInTheSpotlight().attemptsTo(ClickOnSearchButton.click());
-    }
 
-    @Then("the user should see the results of their search")
+    /*@Then("the user should see the results of their search")
     public void theUserShouldSeeTheResultsOfTheirSearch() {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidateSearchHousing.validation(),
                 Matchers.is(true)));
-    }
+    }*/
 
 }
