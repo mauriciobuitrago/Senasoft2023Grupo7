@@ -1,14 +1,15 @@
 package com.booking.stepsdefinitions;
 
-import com.booking.tasks.Finished;
-import com.booking.tasks.ReservationForm;
+import com.booking.questions.ValidateSearchHousing;
+import com.booking.tasks.*;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
-import com.booking.tasks.Housing;
+import org.hamcrest.Matchers;
 
 public class HousingStepDefinition {
 
@@ -34,6 +35,23 @@ public class HousingStepDefinition {
     @Then("the user should see the booking confirm")
     public void theUserShouldSeeTheBookingConfirm() {
 
+    }
+
+
+    // second Scenario
+    @When("the user enter the filter data")
+    public void theUserEnterTheFilterData() {
+        OnStage.theActorInTheSpotlight().attemptsTo(SearchHousing.filters());
+    }
+    @And("the user clicks on search button")
+    public void theUserClicksOnSearchButton() {
+        OnStage.theActorInTheSpotlight().attemptsTo(ClickOnSearchButton.click());
+    }
+
+    @Then("the user should see the results of their search\"")
+    public void theUserShouldSeeTheResultsOfTheirSearch() {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidateSearchHousing.validation(),
+                Matchers.is(true)));
     }
 
 }

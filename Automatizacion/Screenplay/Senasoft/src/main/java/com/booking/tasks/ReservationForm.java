@@ -24,10 +24,11 @@ public class ReservationForm implements Task {
         );
 
         try {
-            Thread.sleep(5000);
+            Thread.sleep(7000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
     }
 
     public static ReservationForm FormData(){
