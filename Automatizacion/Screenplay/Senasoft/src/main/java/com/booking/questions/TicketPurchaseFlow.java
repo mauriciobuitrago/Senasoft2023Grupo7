@@ -3,10 +3,10 @@ package com.booking.questions;
 import com.booking.userinterfaces.TicketPurchasePage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
+import net.serenitybdd.screenplay.annotations.Subject;
 import net.serenitybdd.screenplay.questions.Enabled;
 
-import static net.serenitybdd.screenplay.Tasks.instrumented;
-
+@Subject("validates that the section for purchasing airline tickets is available after executing the step when")
 public class TicketPurchaseFlow implements Question<Boolean> {
     @Override
     public Boolean answeredBy(Actor actor) {

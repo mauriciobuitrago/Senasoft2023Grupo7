@@ -3,8 +3,10 @@ package com.booking.questions;
 import com.booking.userinterfaces.FlightPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
+import net.serenitybdd.screenplay.annotations.Subject;
 import net.serenitybdd.screenplay.questions.SelectedStatus;
 
+@Subject("Validate that when searching for flights, the one way flight radio button is selected")
 public class ValidateOneWayFlight implements Question<Boolean> {
     @Override
     public Boolean answeredBy(Actor actor) {
