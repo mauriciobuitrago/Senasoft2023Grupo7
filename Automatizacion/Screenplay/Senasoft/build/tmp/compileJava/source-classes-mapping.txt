@@ -1,0 +1,56 @@
+com/booking/questions/ValidateOneWayFlight.java
+ com.booking.questions.ValidateOneWayFlight
+com/booking/userinterfaces/FlightPage.java
+ com.booking.userinterfaces.FlightPage
+com/booking/userinterfaces/TouristActivitiesPage.java
+ com.booking.userinterfaces.TouristActivitiesPage
+com/booking/tasks/Finished.java
+ com.booking.tasks.Finished
+com/booking/tasks/ReservationForm.java
+ com.booking.tasks.ReservationForm
+com/booking/tasks/SearchOneWayFlight.java
+ com.booking.tasks.SearchOneWayFlight
+com/booking/tasks/ClickToSelectFlight.java
+ com.booking.tasks.ClickToSelectFlight
+com/booking/tasks/SearchTouristActivity.java
+ com.booking.tasks.SearchTouristActivity
+com/booking/tasks/ClickOnPriceBreakdown.java
+ com.booking.tasks.ClickOnPriceBreakdown
+com/booking/userinterfaces/ReservationFormPage.java
+ com.booking.userinterfaces.ReservationFormPage
+com/booking/questions/TicketPurchaseFlow.java
+ com.booking.questions.TicketPurchaseFlow
+com/booking/questions/ValidatePriceBreakdown.java
+ com.booking.questions.ValidatePriceBreakdown
+com/booking/questions/SearchSpecificFlight.java
+ com.booking.questions.SearchSpecificFlight
+com/booking/questions/ValidateSelectFlightButton.java
+ com.booking.questions.ValidateSelectFlightButton
+com/booking/userinterfaces/TicketPurchasePage.java
+ com.booking.userinterfaces.TicketPurchasePage
+com/booking/tasks/ClickOnSeeFlight.java
+ com.booking.tasks.ClickOnSeeFlight
+com/booking/tasks/SelectSpecificFlights.java
+ com.booking.tasks.SelectSpecificFlights
+com/booking/userinterfaces/MenuService.java
+ com.booking.userinterfaces.MenuService
+com/booking/tasks/ClickOnOneWayFlight.java
+ com.booking.tasks.ClickOnOneWayFlight
+com/booking/questions/FoundInput.java
+ com.booking.questions.FoundInput
+com/booking/tasks/Housing.java
+ com.booking.tasks.Housing
+com/booking/tasks/ClickOnServiceButton.java
+ com.booking.tasks.ClickOnServiceButton
+com/booking/tasks/SelectResult.java
+ com.booking.tasks.SelectResult
+com/booking/userinterfaces/HousingPage.java
+ com.booking.userinterfaces.HousingPage
+com/booking/tasks/SearchHousing.java
+ com.booking.tasks.SearchHousing
+com/booking/tasks/ClickOnSearchButton.java
+ com.booking.tasks.ClickOnSearchButton
+com/booking/tasks/HousingSearch.java
+ com.booking.tasks.HousingSearch
+com/booking/questions/ValidateSearchHousing.java
+ com.booking.questions.ValidateSearchHousing

@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Test</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="47305eed25746f82593d2bfab0e30728a22bc3c65ee3b79fc11246ae1fcf311d.html">Testing Of The Flights Module</a></span>
+                > <span class="truncate-60"><a
+                    href="511b3d7a101e9640f650f045d188dbe2ac75082e00e510e1e1f32aa1b5e292c4.html">Viewing price breakdown for a flight </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 28-09-2023 08:26</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Testing Of The Flights Module </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Viewing price breakdown for a flight
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="503a0e00ae3160929996af9d6fd1688f50c7c007180ecccdc6d1ee3b0524cef7.png" title=" Given the user search a &quot;flights&quot;" width="1366"/>
+                <img src="503a0e00ae3160929996af9d6fd1688f50c7c007180ecccdc6d1ee3b0524cef7.png" title=" User click on service button" width="1366"/>
+                <img src="503a0e00ae3160929996af9d6fd1688f50c7c007180ecccdc6d1ee3b0524cef7.png" title=" User clicks on " width="1366"/>
+                <img src="9ee0c260eda502cc3f0c5f66b5c484de613ee68352acb09a52b085729e91e13b.png" title=" User clicks on  (completed)" width="1366"/>
+                <img src="9ee0c260eda502cc3f0c5f66b5c484de613ee68352acb09a52b085729e91e13b.png" title=" User clicks on icons to access a service" width="1366"/>
+                <img src="2f643370a5af77479d2838446375f34cb0b17b4629e66d5b509778d250e97544.png" title=" User clicks on icons to access a service (completed)" width="1366"/>
+                <img src="2f643370a5af77479d2838446375f34cb0b17b4629e66d5b509778d250e97544.png" title=" User click on service button (completed)" width="1366"/>
+                <img src="c8601183888260970b86197a20f8233b6e6fd07a47f77f806ae112ece314b8e8.png" title=" User select specific flights" width="1366"/>
+                <img src="c8601183888260970b86197a20f8233b6e6fd07a47f77f806ae112ece314b8e8.png" title=" User clicks on dropdown list to select the city of origin" width="1366"/>
+                <img src="9be74c69814115e43dc0749b0596877ecce8ed2af515931cda0b4d6de4ea17dc.png" title=" User clicks on dropdown list to select the city of origin (completed)" width="1366"/>
+                <img src="9be74c69814115e43dc0749b0596877ecce8ed2af515931cda0b4d6de4ea17dc.png" title=" User clicks on Maps the element that presents a city selected by default" width="1366"/>
+                <img src="49c88e8f55499fcc2be7f5d035031d4c5a622bedf4160963c6cc48350cbff6a3.png" title=" User clicks on Maps the element that presents a city selected by default (completed)" width="1366"/>
+                <img src="49c88e8f55499fcc2be7f5d035031d4c5a622bedf4160963c6cc48350cbff6a3.png" title=" User enters 'bogota' into text field to enter the city of origin" width="1366"/>
+                <img src="7932615f2bbc0535f8a3a92e87c9e66579efcc7fddfc59273ce7e0e51038ae25.png" title=" User enters 'bogota' into text field to enter the city of origin (completed)" width="1366"/>
+                <img src="7932615f2bbc0535f8a3a92e87c9e66579efcc7fddfc59273ce7e0e51038ae25.png" title=" User clicks on searched desired city" width="1366"/>
+                <img src="519e418a8bfb7c08549944d834464ec6be276a0a51deb08296c549bbbd0c1e08.png" title=" User clicks on searched desired city (completed)" width="1366"/>
+                <img src="519e418a8bfb7c08549944d834464ec6be276a0a51deb08296c549bbbd0c1e08.png" title=" User clicks on text field to enter the destination city" width="1366"/>
+                <img src="9435dfd7b074f6ddb3595450e9b4f65eaef5241bd665f1b1b39aec5f77d50e69.png" title=" User clicks on text field to enter the destination city (completed)" width="1366"/>
+                <img src="9435dfd7b074f6ddb3595450e9b4f65eaef5241bd665f1b1b39aec5f77d50e69.png" title=" User enters 'tolima' into text field to enter the city of origin" width="1366"/>
+                <img src="f82a8731890d1efa3555e80c570cbf378ce56a33b7a6d4e97600f3b22047dd3b.png" title=" User enters 'tolima' into text field to enter the city of origin (completed)" width="1366"/>
+                <img src="f82a8731890d1efa3555e80c570cbf378ce56a33b7a6d4e97600f3b22047dd3b.png" title=" User clicks on searched desired city" width="1366"/>
+                <img src="5b9a336c3ad15a3bd2505a94c7d8c898e3ae24ecc3f30ab6000299482f8d827e.png" title=" User clicks on searched desired city (completed)" width="1366"/>
+                <img src="5b9a336c3ad15a3bd2505a94c7d8c898e3ae24ecc3f30ab6000299482f8d827e.png" title=" User clicks on locate text fields to dates" width="1366"/>
+                <img src="6b65246f3be3fa9c78b2e366ec41b2459195dae57b2698b0170d6fe502adc9fe.png" title=" User clicks on locate text fields to dates (completed)" width="1366"/>
+                <img src="6b65246f3be3fa9c78b2e366ec41b2459195dae57b2698b0170d6fe502adc9fe.png" title=" User clicks on select a date for arrival day" width="1366"/>
+                <img src="f3ea713b4ff6d88609cb072bee7d4ad17bfad182f67ffa25fd023dc553533968.png" title=" User clicks on select a date for arrival day (completed)" width="1366"/>
+                <img src="f3ea713b4ff6d88609cb072bee7d4ad17bfad182f67ffa25fd023dc553533968.png" title=" User clicks on select a date for departure day" width="1366"/>
+                <img src="ff476a1132d4c1ea5fb9b2927300f2d03c99d5fddaf9c77eae44f13775def9d3.png" title=" User clicks on select a date for departure day (completed)" width="1366"/>
+                <img src="ff476a1132d4c1ea5fb9b2927300f2d03c99d5fddaf9c77eae44f13775def9d3.png" title=" User clicks on button to start the flight search" width="1366"/>
+                <img src="790ae86feab352b3b5870e2e2fc7a3ec0af9815b43fcf58662a1f60c2ab0b623.png" title=" User clicks on button to start the flight search (completed)" width="1366"/>
+                <img src="790ae86feab352b3b5870e2e2fc7a3ec0af9815b43fcf58662a1f60c2ab0b623.png" title=" User select specific flights (completed)" width="1366"/>
+                <img src="1d5bb4cbc26d72130c4ef23354d957a214b92163c659ad15b4c5f392160a9fc4.png" title=" Given the user search a &quot;flights&quot; (completed)" width="1366"/>
+                <img src="b07e4faf484dcad6858b2aecb8ff5104c69599fc40686ff7f12f3563bfa9f64c.png" title=" When the user clicks on price breakdown icon" width="1366"/>
+                <img src="b07e4faf484dcad6858b2aecb8ff5104c69599fc40686ff7f12f3563bfa9f64c.png" title=" User click on price breakdown" width="1366"/>
+                <img src="b07e4faf484dcad6858b2aecb8ff5104c69599fc40686ff7f12f3563bfa9f64c.png" title=" User clicks on question icon to display the breakdown of a price for a flight" width="1366"/>
+                <img src="b07e4faf484dcad6858b2aecb8ff5104c69599fc40686ff7f12f3563bfa9f64c.png" title=" User click on price breakdown (completed)" width="1366"/>
+                <img src="d380cf752a90f6eb7014979462c90bfeea0d391a4e0bce83ee4a54ba9ad4d4b0.png" title=" When the user clicks on price breakdown icon (completed)" width="1366"/>
+                <img src="d380cf752a90f6eb7014979462c90bfeea0d391a4e0bce83ee4a54ba9ad4d4b0.png" title=" Then user should see a modal view with the price breakdown" width="1366"/>
+                <img src="d380cf752a90f6eb7014979462c90bfeea0d391a4e0bce83ee4a54ba9ad4d4b0.png" title=" Then validates that the modal window that shows the price breakdown for a flight is displayed should be (true)" width="1366"/>
+                <img src="d380cf752a90f6eb7014979462c90bfeea0d391a4e0bce83ee4a54ba9ad4d4b0.png" title=" Then user should see a modal view with the price breakdown (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.4.34</span>
+</div>
+</body>
+</html>
