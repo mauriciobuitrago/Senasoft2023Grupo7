@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Housing" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-09-28T15:06:07" hostname="DESKTOP-QFN6M8D" time="0.315">
+<testsuite name="Housing" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-09-28T15:07:59" hostname="DESKTOP-QFN6M8D" time="0.317">
   <properties/>
-  <testcase name="Housing" classname="Housing" time="0.315">
+  <testcase name="Housing" classname="Housing" time="0.317">
     <failure message="io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.booking.stepsdefinitions.FlightsStepDefinition.theUserShouldSeeTheResultsOfTheirSearch() and com.booking.stepsdefinitions.HousingStepDefinition.theUserShouldSeeTheResultsOfTheirSearch()" type="io.cucumber.core.runner.DuplicateStepDefinitionException">io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.booking.stepsdefinitions.FlightsStepDefinition.theUserShouldSeeTheResultsOfTheirSearch() and com.booking.stepsdefinitions.HousingStepDefinition.theUserShouldSeeTheResultsOfTheirSearch()
 	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:249)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
