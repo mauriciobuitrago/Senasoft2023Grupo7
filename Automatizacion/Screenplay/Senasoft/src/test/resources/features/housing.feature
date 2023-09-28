@@ -10,4 +10,4 @@ Feature: Housing
     Given that the user is on the housing page
     When the user enter the filter data
     And the user clicks on search button
-    Then the user should see the results of their search"
+    Then the user should see the results of their search

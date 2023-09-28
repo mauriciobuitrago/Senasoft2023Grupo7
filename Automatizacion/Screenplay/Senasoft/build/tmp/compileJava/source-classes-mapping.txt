@@ -16,17 +16,17 @@ com/booking/tasks/ClickOnServiceButton.java
  com.booking.tasks.ClickOnServiceButton
 com/booking/userinterfaces/HousingPage.java
  com.booking.userinterfaces.HousingPage
-com/booking/tasks/SearchHousing.java
- com.booking.tasks.SearchHousing
+com/booking/tasks/Finished.java
+ com.booking.tasks.Finished
 com/booking/tasks/ClickOnPriceBreakdown.java
  com.booking.tasks.ClickOnPriceBreakdown
 com/booking/tasks/ClickOnSearchButton.java
  com.booking.tasks.ClickOnSearchButton
-com/booking/tasks/Finished.java
- com.booking.tasks.Finished
+com/booking/questions/FoundInput.java
+ com.booking.questions.FoundInput
 com/booking/tasks/ReservationForm.java
  com.booking.tasks.ReservationForm
 com/booking/userinterfaces/ReservationFormPage.java
  com.booking.userinterfaces.ReservationFormPage
-com/booking/questions/FoundInput.java
- com.booking.questions.FoundInput
+com/booking/tasks/SearchHousing.java
+ com.booking.tasks.SearchHousing

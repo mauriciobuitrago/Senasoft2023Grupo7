@@ -25,7 +25,9 @@ public class Finished implements Task {
                     Scroll.to(ReservationFormPage.TXT_DATA_RESEVATION));
         } catch (ElementNotFoundException e){
             System.out.println("PASO");
-            actor.attemptsTo(Scroll.to(ReservationFormPage.BTN_FINAL),
+            actor.attemptsTo(Scroll.to(ReservationFormPage.CHECK_BOX_FINAL),
+                    Click.on(ReservationFormPage.CHECK_BOX_FINAL),
+                    Scroll.to(ReservationFormPage.BTN_FINAL),
                     Click.on(ReservationFormPage.BTN_FINAL),
                     Scroll.to(ReservationFormPage.TXT_DATA_RESEVATION));
         }

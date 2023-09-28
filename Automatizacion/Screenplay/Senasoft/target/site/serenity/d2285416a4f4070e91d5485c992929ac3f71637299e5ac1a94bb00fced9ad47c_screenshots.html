@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 28-09-2023 09:30</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 28-09-2023 09:38</span>
     <br style="clear:left"/>
 </div>
 
@@ -189,9 +189,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="error-color">search housing successful
+                                <span class="failing-color">search housing successful
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -214,7 +214,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Web driver exception: The following error occurred: disconnected: unable to send message to renderer</span>
+                    <span class="error-message error-message-title">Element should be present exception: Expected condition failed: waiting for By.xpath: (//span[@class='eedba9e88a'])[14] to be present (tried for 20 second(s) with 100 milliseconds interval)Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: 'DESKTOP-QFN6M8D', ip: '172.18.1.247', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'Driver info: driver.version: unknown</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -230,13 +230,20 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>org.openqa.selenium.WebDriverException </h4>
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException </h4>
                 </div>
                 <div class="card-body">
                     <div>
                         <pre>com.booking.tasks.SearchHousing.performAs(SearchHousing.java:16)<br />com.booking.stepsdefinitions.HousingStepDefinition.theUserEnterTheFilterData(HousingStepDefinition.java:47)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)<br /></pre>
                     </div>
 
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: (//span[@class='eedba9e88a'])[14] to be present (tried for 20 second(s) with 100 milliseconds interval)<br>Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'<br>System info: host: 'DESKTOP-QFN6M8D', ip: '172.18.1.247', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'<br>Driver info: driver.version: unknown</pre>
+                        <pre>com.booking.tasks.SearchHousing.performAs(SearchHousing.java :16)<br />com.booking.stepsdefinitions.HousingStepDefinition.theUserEnterTheFilterData(HousingStepDefinition.java :47)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java :66)<br />io.cucumber.java.Invoker.invoke(Invoker.java :24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java :47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java :29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java :66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java :63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java :92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java :64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java :51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java :104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java :73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :258)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :57)<br /></pre>
+                    </div>
                 </div>
             </div>
         </div>
@@ -249,11 +256,7 @@
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="80a03f9655637b408f7179edcde05673c8ef3405b870d4ea162e18300d790bcf.png" title=" Given that the user is on the housing page" width="1366"/>
-                <img src="9aba4bda73562de4d2358cb9047650441fdc73cd205d4ba7b61b859cfa379658.png" title=" Given that the user is on the housing page (completed)" width="1366"/>
-                <img src="9aba4bda73562de4d2358cb9047650441fdc73cd205d4ba7b61b859cfa379658.png" title=" When the user enter the filter data" width="1366"/>
-                <img src="9aba4bda73562de4d2358cb9047650441fdc73cd205d4ba7b61b859cfa379658.png" title=" User search housing" width="1366"/>
-                <img src="9aba4bda73562de4d2358cb9047650441fdc73cd205d4ba7b61b859cfa379658.png" title=" User clicks on modal view for registration: <span class='error-color'>ERROR</span>" width="1366"/>
+                <img src="80a03f9655637b408f7179edcde05673c8ef3405b870d4ea162e18300d790bcf.png" title=" Given that the user is on the housing page: <span class='failing-color'>FAILURE</span>" width="1366"/>
             </div>
         </div>
 

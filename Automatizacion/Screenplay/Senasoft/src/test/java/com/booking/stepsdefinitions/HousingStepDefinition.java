@@ -28,6 +28,7 @@ public class HousingStepDefinition {
     public void theUserReservesTheNumberOfRoomsOfTheBestOption() {
 
     }
+
     @And("the user fills the forms to reserve the housing with following data")
     public void theUserFillsTheFormsToReserveTheHousingWithFollowingData() {
         OnStage.theActorInTheSpotlight().attemptsTo(ReservationForm.FormData());
@@ -40,7 +41,6 @@ public class HousingStepDefinition {
                 Matchers.is(true)));
     }
 
-
     // second Scenario
     @When("the user enter the filter data")
     public void theUserEnterTheFilterData() {
@@ -52,7 +52,7 @@ public class HousingStepDefinition {
         OnStage.theActorInTheSpotlight().attemptsTo(ClickOnSearchButton.click());
     }
 
-    @Then("the user should see the results of their search\"")
+    @Then("the user should see the results of their search")
     public void theUserShouldSeeTheResultsOfTheirSearch() {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidateSearchHousing.validation(),
                 Matchers.is(true)));
