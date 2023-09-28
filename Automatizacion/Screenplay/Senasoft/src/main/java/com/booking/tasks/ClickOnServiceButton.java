@@ -26,6 +26,9 @@ public class ClickOnServiceButton implements Task {
             case "flights":
                 actor.attemptsTo(Click.on(MenuService.IconsService.of("2")));
                 break;
+            case "tourist attractions":
+                actor.attemptsTo(Click.on(MenuService.IconsService.of("4")));
+                break;
         }
     }
 
