@@ -1,9 +1,6 @@
 package com.booking.stepsdefinitions;
 
-import com.booking.questions.SearchSpecificFlight;
-import com.booking.questions.TicketPurchaseFlow;
-import com.booking.questions.ValidatePriceBreakdown;
-import com.booking.questions.ValidateSelectFlightButton;
+import com.booking.questions.*;
 import com.booking.tasks.*;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -73,8 +70,7 @@ public class FlightsStepDefinition {
                 Matchers.is(true)));
     }
 
-
-    //validate flight selection
+    //Step application to view the selection scenario of a flight
 
     @Given("that the user see the details of any {string}")
     public void thatTheUserSeeTheDetailsOfAny(String option) {
@@ -93,4 +89,23 @@ public class FlightsStepDefinition {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(TicketPurchaseFlow.validateTicketPurchaseSection(),
                 Matchers.is(true)));
     }
+
+    //Step-by-step application to validate one-way flight search scenario
+    @Given("that apply the filter one way  for {string}")
+    public void thatApplyTheFilterOneWayFor(String option) {
+        OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://www.booking.com"));
+        OnStage.theActorInTheSpotlight().wasAbleTo(ClickOnServiceButton.clickOnServiceButton(option));
+        OnStage.theActorInTheSpotlight().attemptsTo(ClickOnOneWayFlight.clickOneWayButton());
+    }
+    @When("the user enter the data for the search and clicks on search")
+    public void theUserEnterTheDataForTheSearchAndClicksOnSearch() {
+        OnStage.theActorInTheSpotlight().attemptsTo(SearchOneWayFlight.selectOneWayFlight());
+    }
+
+    @Then("the user should see the flights with this filter")
+    public void theUserShouldSeeTheFlightsWithThisFilter() {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidateOneWayFlight.isOneWayButtonSelected(),
+                Matchers.is(true)));
+    }
+
 }

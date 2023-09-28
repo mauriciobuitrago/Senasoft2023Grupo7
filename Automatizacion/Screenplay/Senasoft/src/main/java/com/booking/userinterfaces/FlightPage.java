@@ -44,4 +44,8 @@ public class FlightPage {
 
     public static final Target BTN_SELECT_FLIGHT = Target.the("button to select a flight from the flight detail modal sale")
             .locatedBy("//div[@class='css-95bx75']/div[2]/button");
+
+    //locators to select one way flight
+    public static final Target RBN_ONEWAY_FLIGHT = Target.the("radio button to select one way flights only")
+            .locatedBy("//input[@id='search_type_option_ONEWAY']");
 }

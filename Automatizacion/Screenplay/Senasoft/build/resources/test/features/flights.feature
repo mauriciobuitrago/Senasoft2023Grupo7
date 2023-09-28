@@ -19,3 +19,8 @@ Feature: Testing of the flights module
     Given that the user see the details of any "flights"
     When the user clicks on select
     Then the user should see the tariff section
+
+  Scenario: validate filters for one-way flights
+    Given that apply the filter one way  for "flights"
+    When the user enter the data for the search and clicks on search
+    Then the user should see the flights with this filter
