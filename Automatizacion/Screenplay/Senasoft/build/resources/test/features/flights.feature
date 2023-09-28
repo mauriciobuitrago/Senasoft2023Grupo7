@@ -9,3 +9,8 @@ Feature: Testing of the flights module
     Given the user search a "flights"
     When the user clicks on price breakdown icon
     Then user should see a modal view with the price breakdown
+
+  Scenario: view flight details
+    Given that the user search a "flights"
+    When the user selects a flight and clicks on see flight
+    Then the user should see a modal view with details of their flight

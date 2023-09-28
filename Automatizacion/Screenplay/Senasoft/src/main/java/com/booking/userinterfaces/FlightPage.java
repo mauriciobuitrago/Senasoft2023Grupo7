@@ -35,7 +35,13 @@ public class FlightPage {
     public static final Target ICON_QUESTION_PRICE = Target.the("question icon to display the breakdown of a price for a flight")
             .locatedBy("//span[@class='Button-module__text___YLOOX']/span");
 
-    public static final Target LBL_PRICE_BREAKDOWN = Target.the("")
+    public static final Target LBL_PRICE_BREAKDOWN = Target.the("title of the modal window that shows the breakdown of a price")
             .locatedBy("//div[@class='Text-module__root--variant-headline_3___7x4vh css-1ebnygn']");
 
+    //locators to view the flight details
+    public static final Target BTN_SEE_FLIGHT = Target.the("button that displays a modal window to see the details of a flight")
+            .locatedBy("//div[@class='css-1lhjur2']/div[2]/button");
+
+    public static final Target BTN_SELECT_FLIGHT = Target.the("button to select a flight from the flight detail modal sale")
+            .locatedBy("//div[@class='css-95bx75']/div[2]/button");
 }

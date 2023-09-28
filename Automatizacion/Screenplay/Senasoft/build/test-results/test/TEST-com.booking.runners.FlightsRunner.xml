@@ -2,9 +2,22 @@
 <testsuite name="com.booking.runners.FlightsRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-J89N0A5" time="0.0">
   <properties/>
   <system-out><![CDATA[
-2 Scenarios (?[32m2 passed?[0m)
-6 Steps (?[32m6 passed?[0m)
-0m47,531s
+?[31mFailed scenarios:?[0m
+file:///C:/Users/SenaSOFT/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/flights.feature:13 # view flight details
+
+3 Scenarios (?[31m1 failed?[0m, ?[32m2 passed?[0m)
+9 Steps (?[31m1 failed?[0m, ?[32m8 passed?[0m)
+1m5,751s
+
+
+java.lang.AssertionError: 
+Expected: is <false>
+     but: was <true>
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:322)
+	at com.booking.stepsdefinitions.FlightsStepDefinition.theUserShouldSeeAModalViewWithDetailsOfTheirFlight(FlightsStepDefinition.java:73)
+	at ?.the user should see a modal view with details of their flight(file:///C:/Users/SenaSOFT/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/flights.feature:16)
 
 
 ]]></system-out>
@@ -26,10 +39,12 @@
 -------------------------------------------------------------------------------------
 
 [Test worker] INFO  - Test Suite Started: Testing of the flights module
-[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@7a3fbd7d: Generating report for test outcome: Testing of the flights module:Search for flights for a specific destination
-[pool-1-thread-2] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@7a3fbd7d: Generating report for test outcome: Testing of the flights module:Viewing price breakdown for a flight
-[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@3901833f: Generating report for test outcome: Testing of the flights module:Search for flights for a specific destination
-[pool-2-thread-2] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@3901833f: Generating report for test outcome: Testing of the flights module:Viewing price breakdown for a flight
+[pool-1-thread-2] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@441b9617: Generating report for test outcome: Testing of the flights module:Viewing price breakdown for a flight
+[pool-1-thread-3] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@441b9617: Generating report for test outcome: Testing of the flights module:view flight details
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@441b9617: Generating report for test outcome: Testing of the flights module:Search for flights for a specific destination
+[pool-2-thread-2] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@47e452a0: Generating report for test outcome: Testing of the flights module:Viewing price breakdown for a flight
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@47e452a0: Generating report for test outcome: Testing of the flights module:Search for flights for a specific destination
+[pool-2-thread-3] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@47e452a0: Generating report for test outcome: Testing of the flights module:view flight details
 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Cleanup test resources for URI file:///C:/Users/SenaSOFT/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/flights.feature
 ]]></system-err>
 </testsuite>
