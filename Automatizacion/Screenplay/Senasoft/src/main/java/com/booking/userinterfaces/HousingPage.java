@@ -4,7 +4,7 @@ import net.serenitybdd.screenplay.targets.Target;
 
 public class HousingPage {
 
-    //modal view
+    // modal view - popup
     public static final Target MODAL_VIEW = Target.the("modal view for registration")
             .locatedBy("(//span[@class='eedba9e88a'])[14]");
 
@@ -19,13 +19,12 @@ public class HousingPage {
             .locatedBy("//*[@data-testid='herobanner-title1']");
 
     // function of this target realized a scroll
-    public static final Target CONSULTATION_DETAILS = Target.the("paragraph with details on their search")
+    public static final Target CONSULTATION_DETAILS = Target.the("paragraph with details of their search")
             .locatedBy("(//div[@data-testid='price-for-x-nights'])[2]");
 
 
-
-    // in the first parameter, the 1 is first month, the 2 is second month
-    // in the second parameter, the  tr is for the rows and td is for columns
+    // in the first parameter, the "1" is first month, the 2 is second month
+    // in the second parameter, the "tr" is for the rows and "td" is for columns
     public static final Target FIRST_DATE = Target.the("select the first date")
             .locatedBy("//div[@class='d4babb55ef']/div[1]/table/tbody/tr[5]/td[6]");
 
@@ -35,8 +34,16 @@ public class HousingPage {
     public static final Target ICON_DROP_DOWN = Target.the("icon to display the drop-down menu")
             .locatedBy("(//button[contains(@class,'d47738b911')])[3]");
 
-    // the following is an explanation of what this parameterized target receives
+    public static final Target BTN_SEARCH = Target.the("btn to search")
+            .locatedBy("//div[@class='f9cf783bde']/button");
 
+    // number of childs - this start in 2, 2 = first child and so on
+    public static final Target AGE_CHILDS = Target.the("button for children's age range")
+                    .locatedBy("(//div[contains(@class,'a53cbfa6de')])[{0}]/div/select");
+
+    // filters
+
+    // the following is an explanation of what this parameterized target receives
     // 4 subtract adults
     // 5 add adults
     // 6 substract childs
@@ -44,16 +51,7 @@ public class HousingPage {
     // 8 substract rooms
     // 9 add rooms
     // 10 button to ok
-
-    public static final Target BTN_SEARCH = Target.the("btn to add items to the reservation")
-            .locatedBy("//div[@class='f9cf783bde']/button");
-
-    // number of childs - this start in 2, 2 = first child and so on
-    public static final Target AGE_CHILDS = Target.the("age of the childs")
-                    .locatedBy("(//div[contains(@class,'a53cbfa6de')])[{0}]/div/select");
-
-    // filters
-    public static final Target ADD_ITEMS = Target.the("btn of search")
+    public static final Target BTN_ADD_PERSONS = Target.the("button to add people to the trip")
             .locatedBy("(//button[contains(@class,'a83ed08757')])[{0}]");
 
     public static final Target PRICE_FILTER = Target.the("filter by price")
@@ -65,33 +63,33 @@ public class HousingPage {
     public static final Target FILTER_BY_STARS = Target.the("filter by stars")
             .locatedBy("//div[@data-filters-item='class:class={0}']");
 
-    public static final Target ORDER_BY_DINAMIC = Target.the("filter of order by of form dinamic")
+    public static final Target ORDER_BY_DINAMIC = Target.the("filter of order of form dinamic")
             .locatedBy("//button[@data-testid='sorters-dropdown-trigger']");
 
-    public static final Target DINAMICS_ORDER_OPTIONS = Target.the("List of options for sorting by dinamic forms")
+    public static final Target DINAMICS_ORDER_OPTIONS = Target.the("List of options by dinamic forms")
             .locatedBy("//ul[@class='ad7c39949a']/li[3]");
 
 
+    // search results
 
-    // result of the search
     // for validation
-    public static final Target MESSAGE_OF_SEARCH = Target.the("message with the number of housing found")
+    public static final Target MESSAGE_OF_SEARCH = Target.the("title with the search result")
             .locatedBy("//div[@id='basiclayout']//h1");
 
-    // to scroll in the first form
+    // element to scroll
     public static final Target FIRST_SCROLL = Target.the("message with the number of housing found")
             .locatedBy("(//header[@class='bui-card__header']/h2)[6]");
 
 
 
-
+    // elements related to the search of housing
     public static final Target FIRST_RESULT = Target.the("first result of housing search")
             .locatedBy("//div[@class='d4924c9e74']/div[3]/div/div[1]/div");
 
     public static final Target DESCRIBE_OF_RESULTS = Target.the("describe of the first result of housing search")
             .locatedBy("(//span[@class='a53cbfa6de'])[6]");
 
-    // new window
+    // elements of the new window
     public static final Target FIRST_BTN_RESERVATION = Target.the("first button to realize a reservation")
             .locatedBy("(//span[@class='bui-button__text'])[2]");
 

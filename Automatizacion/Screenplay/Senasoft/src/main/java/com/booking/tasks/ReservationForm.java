@@ -18,13 +18,13 @@ import org.hamcrest.Matchers;
 public class ReservationForm implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Scroll.to(ReservationFormPage.FIRST_SCROLL),
-                Click.on(ReservationFormPage.FIRST_NAME),
-                Enter.theValue("Juan").into(ReservationFormPage.FIRST_NAME),
-                Click.on(ReservationFormPage.LAST_NAME),
-                Enter.theValue("Salinas").into(ReservationFormPage.LAST_NAME),
-                Click.on(ReservationFormPage.LAST_NAME),
-                Enter.theValue("juadsalinas@gmail.com").into(ReservationFormPage.EMAIL));
+        actor.attemptsTo(Scroll.to(ReservationFormPage.TXT_FIRST_SCROLL),
+                Click.on(ReservationFormPage.TXT_FIRST_NAME),
+                Enter.theValue("Juan").into(ReservationFormPage.TXT_FIRST_NAME),
+                Click.on(ReservationFormPage.TXT_LAST_NAME),
+                Enter.theValue("Salinas").into(ReservationFormPage.TXT_LAST_NAME),
+                Click.on(ReservationFormPage.TXT_LAST_NAME),
+                Enter.theValue("juadsalinas@gmail.com").into(ReservationFormPage.TXT_EMAIL));
 
         try {
             System.out.println("Entro");

@@ -14,8 +14,6 @@ import org.hamcrest.Matchers;
 
 public class HousingStepDefinition {
 
-
-
     @When("the user apply the following filters")
     public void theUserApplyTheFollowingFilters() {
         OnStage.theActorInTheSpotlight().attemptsTo(Housing.filters());

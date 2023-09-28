@@ -28,4 +28,5 @@ public class SearchOneWayFlight implements Task {
     public static  SearchOneWayFlight selectOneWayFlight(){
         return instrumented(SearchOneWayFlight.class);
     }
+
 }

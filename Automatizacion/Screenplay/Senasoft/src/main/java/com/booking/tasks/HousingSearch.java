@@ -20,14 +20,14 @@ public class HousingSearch implements Task {
                 Click.on(HousingPage.FIRST_DATE),
                 Click.on(HousingPage.SECOND_DATE),
                 Click.on(HousingPage.ICON_DROP_DOWN),
-                Click.on(HousingPage.ADD_ITEMS.of("5")),
-                Click.on(HousingPage.ADD_ITEMS.of("7")),
-                Click.on(HousingPage.ADD_ITEMS.of("7")),
+                Click.on(HousingPage.BTN_ADD_PERSONS.of("5")),
+                Click.on(HousingPage.BTN_ADD_PERSONS.of("7")),
+                Click.on(HousingPage.BTN_ADD_PERSONS.of("7")),
                 Click.on(HousingPage.AGE_CHILDS.of("2")),
                 SelectFromOptions.byValue("6").from(HousingPage.AGE_CHILDS.of("2")),
                 Click.on(HousingPage.AGE_CHILDS.of("3")),
                 SelectFromOptions.byValue("6").from(HousingPage.AGE_CHILDS.of("3")),
-                Click.on(HousingPage.ADD_ITEMS.of("10")),
+                Click.on(HousingPage.BTN_ADD_PERSONS.of("10")),
                 Click.on(HousingPage.BTN_SEARCH));
     }
 
