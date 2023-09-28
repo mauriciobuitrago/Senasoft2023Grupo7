@@ -23,13 +23,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">3</div>
+<div class="counter">4</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1m5.47s</div>
+<div class="counter">1m29.10s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">66%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,34 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard error</a>
+<a href="#tab1">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="view flight details"></a>
-<h3 class="failures">view flight details</h3>
-<span class="code">
-<pre>java.lang.AssertionError: 
-Expected: is &lt;false&gt;
-     but: was &lt;true&gt;
-	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
-	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:322)
-	at com.booking.stepsdefinitions.FlightsStepDefinition.theUserShouldSeeAModalViewWithDetailsOfTheirFlight(FlightsStepDefinition.java:73)
-	at ✽.the user should see a modal view with details of their flight(file:///C:/Users/SenaSOFT/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/flights.feature:16)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -100,22 +79,27 @@ Expected: is &lt;false&gt;
 </thead>
 <tr>
 <td class="success">Search for flights for a specific destination</td>
-<td class="success">24.042s</td>
+<td class="success">24.313s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Viewing price breakdown for a flight</td>
-<td class="success">20.344s</td>
+<td class="success">19.519s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">view flight details</td>
-<td class="failures">21.085s</td>
-<td class="failures">failed</td>
+<td class="success">validate flight selection</td>
+<td class="success">24.688s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">view flight details</td>
+<td class="success">20.581s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard error</h2>
 <span class="code">
 <pre>[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/SenaSOFT/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/flights.feature
@@ -133,11 +117,11 @@ Search for flights for a specific destination(testing-of-the-flights-module;sear
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\SenaSOFT\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 57904
+Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 9941
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-sept. 27, 2023 7:19:59 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+sept. 27, 2023 8:09:27 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -162,11 +146,11 @@ Viewing price breakdown for a flight(testing-of-the-flights-module;viewing-price
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\SenaSOFT\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 6817
+Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 6262
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-sept. 27, 2023 7:20:21 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+sept. 27, 2023 8:09:49 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -191,22 +175,49 @@ view flight details(testing-of-the-flights-module;view-flight-details)
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\SenaSOFT\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 29127
+Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 28889
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-sept. 27, 2023 7:20:41 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+sept. 27, 2023 8:10:09 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
-[Test worker] ERROR  - 
-  _____   ___   ___   _____     ___     _     ___   _      ___   ___  
- |_   _| | __| / __| |_   _|   | __|   /_\   |_ _| | |    | __| |   \ 
-   | |   | _|  \__ \   | |     | _|   / _ \   | |  | |__  | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___| |____| |___| |___/ 
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
 view flight details
------------------------------------------------------------------------
-[Test worker] ERROR  -     Test failed at step: Then validate select flight button should be (false)
-[Test worker] ERROR  -     Expected: is &lt;false&gt; but: was &lt;true&gt;
+----------------------------------------------------------------------
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/SenaSOFT/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/flights.feature
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+validate flight selection(testing-of-the-flights-module;validate-flight-selection)
+--------------------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117
+[Test worker] WARN io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\SenaSOFT\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
+Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 50378
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+sept. 27, 2023 8:10:29 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+validate flight selection
+----------------------------------------------------------------------
 </pre>
 </span>
 </div>
@@ -218,7 +229,7 @@ view flight details
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at 27/09/2023, 7:21:04 p. m.</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at 27/09/2023, 8:10:56 p. m.</p>
 </div>
 </div>
 </body>

@@ -14,3 +14,8 @@ Feature: Testing of the flights module
     Given that the user search a "flights"
     When the user selects a flight and clicks on see flight
     Then the user should see a modal view with details of their flight
+
+  Scenario: validate flight selection
+    Given that the user see the details of any "flights"
+    When the user clicks on select
+    Then the user should see the tariff section

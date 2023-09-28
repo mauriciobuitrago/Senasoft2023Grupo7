@@ -1,8 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Testing of the flights module" skipped="0" tests="3" time="64.23" timestamp="2023-09-27 07:19:55"><testcase name="Search for flights for a specific destination"/><testcase name="Viewing price breakdown for a flight"/><testcase name="view flight details"><failure message="&#13;&#10;Expected: is &lt;false&gt;&#13;&#10;     but: was &lt;true&gt;" type="java.lang.AssertionError">&#13;
-Expected: is &lt;false&gt;&#13;
-     but: was &lt;true&gt;</failure><system-err>&#13;
-Expected: is &lt;false&gt;&#13;
-     but: was &lt;true&gt;&#13;
-com.booking.stepsdefinitions.FlightsStepDefinition.theUserShouldSeeAModalViewWithDetailsOfTheirFlight(FlightsStepDefinition.java:73)&#13;
-✽.the user should see a modal view with details of their flight(file:///C:/Users/SenaSOFT/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/flights.feature:16)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Testing of the flights module" skipped="0" tests="4" time="87.74" timestamp="2023-09-27 08:09:23"><testcase name="Search for flights for a specific destination"/><testcase name="Viewing price breakdown for a flight"/><testcase name="view flight details"/><testcase name="validate flight selection"/></testsuite>

@@ -1,12 +1,10 @@
 package com.booking.stepsdefinitions;
 
 import com.booking.questions.SearchSpecificFlight;
+import com.booking.questions.TicketPurchaseFlow;
 import com.booking.questions.ValidatePriceBreakdown;
 import com.booking.questions.ValidateSelectFlightButton;
-import com.booking.tasks.ClickOnPriceBreakdown;
-import com.booking.tasks.ClickOnSeeFlight;
-import com.booking.tasks.ClickOnServiceButton;
-import com.booking.tasks.SelectSpecificFlights;
+import com.booking.tasks.*;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -66,7 +64,7 @@ public class FlightsStepDefinition {
     @When("the user selects a flight and clicks on see flight")
     public void theUserSelectsAFlightAndClicksOnSeeFlight() {
         //display the modal window to see the details of a price
-        OnStage.theActorInTheSpotlight().attemptsTo(ClickOnSeeFlight.clickOnSeeFlightButton());//
+        OnStage.theActorInTheSpotlight().attemptsTo(ClickOnSeeFlight.clickOnSeeFlightButton());
     }
 
     @Then("the user should see a modal view with details of their flight")
@@ -76,4 +74,23 @@ public class FlightsStepDefinition {
     }
 
 
+    //validate flight selection
+
+    @Given("that the user see the details of any {string}")
+    public void thatTheUserSeeTheDetailsOfAny(String option) {
+        OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://www.booking.com"));
+        OnStage.theActorInTheSpotlight().wasAbleTo(ClickOnServiceButton.clickOnServiceButton(option));
+        OnStage.theActorInTheSpotlight().wasAbleTo(SelectSpecificFlights.searchFlightToDestination());
+        OnStage.theActorInTheSpotlight().attemptsTo(ClickOnSeeFlight.clickOnSeeFlightButton());
+    }
+    @When("the user clicks on select")
+    public void theUserClicksOnSelect() {
+        OnStage.theActorInTheSpotlight().attemptsTo(ClickToSelectFlight.clickOnSelectFlightButton());
+    }
+
+    @Then("the user should see the tariff section")
+    public void theUserShouldSeeTheTariffSection() {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(TicketPurchaseFlow.validateTicketPurchaseSection(),
+                Matchers.is(true)));
+    }
 }
