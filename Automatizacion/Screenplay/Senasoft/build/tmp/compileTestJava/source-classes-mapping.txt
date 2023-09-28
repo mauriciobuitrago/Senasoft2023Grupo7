@@ -4,7 +4,7 @@ com/booking/runners/HousingRunner.java
  com.booking.runners.HousingRunner
 com/booking/stepsdefinitions/Hooks.java
  com.booking.stepsdefinitions.Hooks
-com/booking/stepsdefinitions/HousingStepDefinition.java
- com.booking.stepsdefinitions.HousingStepDefinition
 com/booking/stepsdefinitions/FlightsStepDefinition.java
  com.booking.stepsdefinitions.FlightsStepDefinition
+com/booking/stepsdefinitions/HousingStepDefinition.java
+ com.booking.stepsdefinitions.HousingStepDefinition

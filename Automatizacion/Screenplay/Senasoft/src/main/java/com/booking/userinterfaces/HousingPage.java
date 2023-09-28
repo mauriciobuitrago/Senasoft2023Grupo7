@@ -37,24 +37,24 @@ public class HousingPage {
 
     // the following is an explanation of what this parameterized target receives
 
-    // 3 subtract adults
-    // 4 add adults
-    // 5 substract childs
-    // 6 add childs
-    // 7 substract rooms
-    // 8 add rooms
-    // 9 button to ok
-    public static final Target ADD_ITEMS = Target.the("btn to add items to the reservation")
-            .locatedBy("(//button[contains(@class,'a83ed08757')])[{0}]");
+    // 4 subtract adults
+    // 5 add adults
+    // 6 substract childs
+    // 7 add childs
+    // 8 substract rooms
+    // 9 add rooms
+    // 10 button to ok
+
+    public static final Target BTN_SEARCH = Target.the("btn to add items to the reservation")
+            .locatedBy("//div[@class='f9cf783bde']/button");
 
     // number of childs - this start in 2, 2 = first child and so on
     public static final Target AGE_CHILDS = Target.the("age of the childs")
                     .locatedBy("(//div[contains(@class,'a53cbfa6de')])[{0}]/div/select");
 
-
     // filters
-    public static final Target BTN_SEARCH = Target.the("btn of search")
-            .locatedBy("(//button[contains(@class,'a83ed08757')])[3]");
+    public static final Target ADD_ITEMS = Target.the("btn of search")
+            .locatedBy("(//button[contains(@class,'a83ed08757')])[{0}]");
 
     public static final Target PRICE_FILTER = Target.the("filter by price")
             .locatedBy("(//*[@class='d819a91462'])[1]");
@@ -74,8 +74,15 @@ public class HousingPage {
 
 
     // result of the search
+    // for validation
     public static final Target MESSAGE_OF_SEARCH = Target.the("message with the number of housing found")
             .locatedBy("//*[@id='bodyconstraint-inner']/div[2]/div/div[2]/div[3]/div[2]/div[1]/h1");
+
+    // to scroll in the first form
+    public static final Target FIRST_SCROLL = Target.the("message with the number of housing found")
+            .locatedBy("(//header[@class='bui-card__header']/h2)[6]");
+
+
 
 
     public static final Target FIRST_RESULT = Target.the("first result of housing search")

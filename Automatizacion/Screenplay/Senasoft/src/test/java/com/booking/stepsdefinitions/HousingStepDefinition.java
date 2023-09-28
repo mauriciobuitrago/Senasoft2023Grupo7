@@ -1,5 +1,6 @@
 package com.booking.stepsdefinitions;
 
+import com.booking.questions.FoundInput;
 import com.booking.questions.ValidateSearchHousing;
 import com.booking.tasks.*;
 import io.cucumber.java.en.And;
@@ -30,11 +31,13 @@ public class HousingStepDefinition {
     @And("the user fills the forms to reserve the housing with following data")
     public void theUserFillsTheFormsToReserveTheHousingWithFollowingData() {
         OnStage.theActorInTheSpotlight().attemptsTo(ReservationForm.FormData());
+        OnStage.theActorInTheSpotlight().attemptsTo(Finished.finishedReservation());
     }
 
     @Then("the user should see the booking confirm")
     public void theUserShouldSeeTheBookingConfirm() {
-
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(FoundInput.found(),
+                Matchers.is(true)));
     }
 
 
@@ -43,6 +46,7 @@ public class HousingStepDefinition {
     public void theUserEnterTheFilterData() {
         OnStage.theActorInTheSpotlight().attemptsTo(SearchHousing.filters());
     }
+
     @And("the user clicks on search button")
     public void theUserClicksOnSearchButton() {
         OnStage.theActorInTheSpotlight().attemptsTo(ClickOnSearchButton.click());
