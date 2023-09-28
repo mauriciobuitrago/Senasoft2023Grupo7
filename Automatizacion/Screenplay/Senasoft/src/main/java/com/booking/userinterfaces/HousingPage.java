@@ -76,7 +76,7 @@ public class HousingPage {
     // result of the search
     // for validation
     public static final Target MESSAGE_OF_SEARCH = Target.the("message with the number of housing found")
-            .locatedBy("//*[@id='bodyconstraint-inner']/div[2]/div/div[2]/div[3]/div[2]/div[1]/h1");
+            .locatedBy("//div[@id='basiclayout']//h1");
 
     // to scroll in the first form
     public static final Target FIRST_SCROLL = Target.the("message with the number of housing found")

@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 28-09-2023 09:38</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 28-09-2023 11:20</span>
     <br style="clear:left"/>
 </div>
 
@@ -189,9 +189,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
-                                <span class="failing-color">search housing successful
+                                <span class="success-color">search housing successful
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -208,55 +208,57 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
-            <div class="screenshotFailure panel panel-danger">
-
-    <div style="display:block">
-        <div class="table">
-            <div class="row">
-                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Element should be present exception: Expected condition failed: waiting for By.xpath: (//span[@class='eedba9e88a'])[14] to be present (tried for 20 second(s) with 100 milliseconds interval)Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: 'DESKTOP-QFN6M8D', ip: '172.18.1.247', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'Driver info: driver.version: unknown</span>
-                </div>
-                <div class="col-sm-2">
-                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
-                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
-                </div>
-             </div>
-        </div>
-    <div>
-
-    <!-- Details Section -->
-    <div class="row stacktrace-details">
-      <div class="col">
-        <div class="collapse multi-collapse" id="stacktraceModal-overall">
-            <div class="card">
-                <div class="card-header">
-                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException </h4>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <pre>com.booking.tasks.SearchHousing.performAs(SearchHousing.java:16)<br />com.booking.stepsdefinitions.HousingStepDefinition.theUserEnterTheFilterData(HousingStepDefinition.java:47)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)<br /></pre>
-                    </div>
-
-                    <h4>
-                        Caused by: org.openqa.selenium.TimeoutException
-                    </h4>
-                    <div>
-                            <pre>Expected condition failed: waiting for By.xpath: (//span[@class='eedba9e88a'])[14] to be present (tried for 20 second(s) with 100 milliseconds interval)<br>Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'<br>System info: host: 'DESKTOP-QFN6M8D', ip: '172.18.1.247', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'<br>Driver info: driver.version: unknown</pre>
-                        <pre>com.booking.tasks.SearchHousing.performAs(SearchHousing.java :16)<br />com.booking.stepsdefinitions.HousingStepDefinition.theUserEnterTheFilterData(HousingStepDefinition.java :47)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java :66)<br />io.cucumber.java.Invoker.invoke(Invoker.java :24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java :47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java :29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java :66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java :63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java :92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java :64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java :51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java :104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java :73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :258)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :57)<br /></pre>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-                <div class="panel-body">
-                    <a href="#" target="_blank" class="btn btn-info">HTML Source</a>
-                </div>
-            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="80a03f9655637b408f7179edcde05673c8ef3405b870d4ea162e18300d790bcf.png" title=" Given that the user is on the housing page: <span class='failing-color'>FAILURE</span>" width="1366"/>
+                <img src="607c2ac7d3e1748fe3880d0fdd89b3d357909423a80696adca168f11401a13f3.png" title=" Given that the user is on the &quot;housing&quot; page" width="1366"/>
+                <img src="607c2ac7d3e1748fe3880d0fdd89b3d357909423a80696adca168f11401a13f3.png" title=" User click on service button" width="1366"/>
+                <img src="607c2ac7d3e1748fe3880d0fdd89b3d357909423a80696adca168f11401a13f3.png" title=" User clicks on modal view for registration" width="1366"/>
+                <img src="78819e51b6d8008384d4d8e4e483b69d2d93feeaa8599a37e0e0243ab27eb979.png" title=" User clicks on modal view for registration (completed)" width="1366"/>
+                <img src="78819e51b6d8008384d4d8e4e483b69d2d93feeaa8599a37e0e0243ab27eb979.png" title=" User clicks on icons to access a service" width="1366"/>
+                <img src="607c2ac7d3e1748fe3880d0fdd89b3d357909423a80696adca168f11401a13f3.png" title=" User clicks on icons to access a service (completed)" width="1366"/>
+                <img src="607c2ac7d3e1748fe3880d0fdd89b3d357909423a80696adca168f11401a13f3.png" title=" User click on service button (completed)" width="1366"/>
+                <img src="607c2ac7d3e1748fe3880d0fdd89b3d357909423a80696adca168f11401a13f3.png" title=" Given that the user is on the &quot;housing&quot; page (completed)" width="1366"/>
+                <img src="9d62fc0af8ded70d63e3c4121dc85d39edb1c0332f9a5c4fe411ee3889cb2959.png" title=" When the user enter the filter data" width="1366"/>
+                <img src="9d62fc0af8ded70d63e3c4121dc85d39edb1c0332f9a5c4fe411ee3889cb2959.png" title=" User housing search" width="1366"/>
+                <img src="9d62fc0af8ded70d63e3c4121dc85d39edb1c0332f9a5c4fe411ee3889cb2959.png" title=" User clicks on navigation bar to search a housing" width="1366"/>
+                <img src="9d62fc0af8ded70d63e3c4121dc85d39edb1c0332f9a5c4fe411ee3889cb2959.png" title=" User enters 'Colombia' into navigation bar to search a housing" width="1366"/>
+                <img src="8322318f4beca736e8da6ff4f90d20f4fcf2c06609399a45eede429fea89a762.png" title=" User enters 'Colombia' into navigation bar to search a housing (completed)" width="1366"/>
+                <img src="8322318f4beca736e8da6ff4f90d20f4fcf2c06609399a45eede429fea89a762.png" title=" User clicks on drop-down list of results for that country or city" width="1366"/>
+                <img src="f732aee544421fdb715a456f774b7fcd8433bc228542459f22498840f0f63b45.png" title=" User clicks on drop-down list of results for that country or city (completed)" width="1366"/>
+                <img src="89f75ee86ebbb1567280803fd5d329b5596a3f5fd386a332b83eb96207d93deb.png" title=" User clicks on select the first date" width="1366"/>
+                <img src="d60206ef21c7c94a8820142d4a78d48b28270d28700869ebea7b7cb74dee582c.png" title=" User clicks on select the first date (completed)" width="1366"/>
+                <img src="d60206ef21c7c94a8820142d4a78d48b28270d28700869ebea7b7cb74dee582c.png" title=" User clicks on select the second date" width="1366"/>
+                <img src="fb09004bd0adbff74bdd9b7d30b0d23720e39cf019eb3f5540bf25ba2f4a60e2.png" title=" User clicks on select the second date (completed)" width="1366"/>
+                <img src="fb09004bd0adbff74bdd9b7d30b0d23720e39cf019eb3f5540bf25ba2f4a60e2.png" title=" User clicks on icon to display the drop-down menu" width="1366"/>
+                <img src="bccc4827b4bf73ed1ce6ec6f973c2e254227ef4865c4222534aa3fd4a2779674.png" title=" User clicks on icon to display the drop-down menu (completed)" width="1366"/>
+                <img src="bccc4827b4bf73ed1ce6ec6f973c2e254227ef4865c4222534aa3fd4a2779674.png" title=" User clicks on btn of search" width="1366"/>
+                <img src="802801e6ca8879ac7d0e860629bcaf31a949692f91d6411e83db6623e9da3d6f.png" title=" User clicks on btn of search (completed)" width="1366"/>
+                <img src="802801e6ca8879ac7d0e860629bcaf31a949692f91d6411e83db6623e9da3d6f.png" title=" User clicks on btn of search" width="1366"/>
+                <img src="3983bf79cb034a7455690eb39905d0b9e6e4d0206cffdac30494616374bbb654.png" title=" User clicks on btn of search (completed)" width="1366"/>
+                <img src="3983bf79cb034a7455690eb39905d0b9e6e4d0206cffdac30494616374bbb654.png" title=" User clicks on btn of search" width="1366"/>
+                <img src="f1ab5fffb560cb112f182835f03d720fa1784a8752f6eaa00244d50c9af04bdd.png" title=" User clicks on btn of search (completed)" width="1366"/>
+                <img src="f1ab5fffb560cb112f182835f03d720fa1784a8752f6eaa00244d50c9af04bdd.png" title=" User clicks on age of the childs" width="1366"/>
+                <img src="5a6fd249b44ae9a44af656ac0b332351a62bfa42b1c707d43dcfb0f76c9de41c.png" title=" User clicks on age of the childs (completed)" width="1366"/>
+                <img src="5a6fd249b44ae9a44af656ac0b332351a62bfa42b1c707d43dcfb0f76c9de41c.png" title=" User selects 6 in age of the childs" width="1366"/>
+                <img src="5a6fd249b44ae9a44af656ac0b332351a62bfa42b1c707d43dcfb0f76c9de41c.png" title=" User selects 6 in age of the childs (completed)" width="1366"/>
+                <img src="5a6fd249b44ae9a44af656ac0b332351a62bfa42b1c707d43dcfb0f76c9de41c.png" title=" User clicks on age of the childs" width="1366"/>
+                <img src="994bf5d12e8815926c961b18ddeebb13ad11347a41631e13340e2a0d60ead749.png" title=" User clicks on age of the childs (completed)" width="1366"/>
+                <img src="994bf5d12e8815926c961b18ddeebb13ad11347a41631e13340e2a0d60ead749.png" title=" User selects 6 in age of the childs" width="1366"/>
+                <img src="994bf5d12e8815926c961b18ddeebb13ad11347a41631e13340e2a0d60ead749.png" title=" User selects 6 in age of the childs (completed)" width="1366"/>
+                <img src="994bf5d12e8815926c961b18ddeebb13ad11347a41631e13340e2a0d60ead749.png" title=" User clicks on btn of search" width="1366"/>
+                <img src="98dda324c370663452b22f39080675ae565bab867bd6fe25abdf087cc163655f.png" title=" User clicks on btn of search (completed)" width="1366"/>
+                <img src="98dda324c370663452b22f39080675ae565bab867bd6fe25abdf087cc163655f.png" title=" User clicks on btn to add items to the reservation" width="1366"/>
+                <img src="c5344591d02af969128e45d156212b82fbe8081d2b780e18ae6ba378efba14de.png" title=" User clicks on btn to add items to the reservation (completed)" width="1366"/>
+                <img src="c5344591d02af969128e45d156212b82fbe8081d2b780e18ae6ba378efba14de.png" title=" User housing search (completed)" width="1366"/>
+                <img src="c5344591d02af969128e45d156212b82fbe8081d2b780e18ae6ba378efba14de.png" title=" When the user enter the filter data (completed)" width="1366"/>
+                <img src="c5344591d02af969128e45d156212b82fbe8081d2b780e18ae6ba378efba14de.png" title=" And the user clicks on search button" width="1366"/>
+                <img src="c5344591d02af969128e45d156212b82fbe8081d2b780e18ae6ba378efba14de.png" title=" User click on search button" width="1366"/>
+                <img src="c5344591d02af969128e45d156212b82fbe8081d2b780e18ae6ba378efba14de.png" title=" User clicks on btn to add items to the reservation" width="1366"/>
+                <img src="c5344591d02af969128e45d156212b82fbe8081d2b780e18ae6ba378efba14de.png" title=" User click on search button (completed)" width="1366"/>
+                <img src="c5344591d02af969128e45d156212b82fbe8081d2b780e18ae6ba378efba14de.png" title=" And the user clicks on search button (completed)" width="1366"/>
+                <img src="c5344591d02af969128e45d156212b82fbe8081d2b780e18ae6ba378efba14de.png" title=" Then the user should see the housings results" width="1366"/>
+                <img src="c5344591d02af969128e45d156212b82fbe8081d2b780e18ae6ba378efba14de.png" title=" Then validate search housing should be (true)" width="1366"/>
+                <img src="c5344591d02af969128e45d156212b82fbe8081d2b780e18ae6ba378efba14de.png" title=" Then the user should see the housings results (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
             </div>
         </div>
 

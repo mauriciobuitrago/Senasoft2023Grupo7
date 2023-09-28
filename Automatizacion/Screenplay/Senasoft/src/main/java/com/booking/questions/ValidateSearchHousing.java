@@ -9,7 +9,7 @@ import net.serenitybdd.screenplay.questions.Text;
 public class ValidateSearchHousing implements Question<Boolean> {
     @Override
     public Boolean answeredBy(Actor actor) {
-        return Enabled.of(HousingPage.MESSAGE_OF_SEARCH).viewedBy(actor).asBoolean();
+        return Enabled.of(HousingPage.ORDER_BY_DINAMIC).viewedBy(actor).asBoolean();
     }
 
     public static ValidateSearchHousing validation(){

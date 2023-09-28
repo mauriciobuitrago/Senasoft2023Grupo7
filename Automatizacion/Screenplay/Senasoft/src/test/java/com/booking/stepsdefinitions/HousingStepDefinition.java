@@ -14,10 +14,7 @@ import org.hamcrest.Matchers;
 
 public class HousingStepDefinition {
 
-    @Given("that the user is on the housing page")
-    public void thatTheUserIsOnTheHousingPage() {
-        OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://www.booking.com/index.es.html"));
-    }
+
 
     @When("the user apply the following filters")
     public void theUserApplyTheFollowingFilters() {
@@ -26,7 +23,7 @@ public class HousingStepDefinition {
 
     @And("the user reserves the number of rooms of the best option")
     public void theUserReservesTheNumberOfRoomsOfTheBestOption() {
-
+        OnStage.theActorInTheSpotlight().attemptsTo(SelectResult.enterData());
     }
 
     @And("the user fills the forms to reserve the housing with following data")
@@ -43,11 +40,20 @@ public class HousingStepDefinition {
 
     // second Scenario
 
+    @When("the user enter the filter data")
+    public void theUserEnterTheFilterData() {
+        OnStage.theActorInTheSpotlight().attemptsTo(HousingSearch.filters());
+    }
 
-    /*@Then("the user should see the results of their search")
-    public void theUserShouldSeeTheResultsOfTheirSearch() {
+    @And("the user clicks on search button")
+    public void theUserClicksOnSearchButton() {
+        OnStage.theActorInTheSpotlight().attemptsTo(ClickOnSearchButton.click());
+    }
+
+    @Then("the user should see the housings results")
+    public void theUserShouldSeeTheHousingsResults() {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidateSearchHousing.validation(),
                 Matchers.is(true)));
-    }*/
+    }
 
 }

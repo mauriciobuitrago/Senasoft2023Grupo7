@@ -1,14 +1,11 @@
 package com.booking.tasks;
 
-import io.cucumber.java.da.Men;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.*;
 import com.booking.userinterfaces.HousingPage;
 import com.booking.userinterfaces.MenuService;
-
-import java.awt.*;
 
 public class Housing implements Task {
     @Override
@@ -37,28 +34,6 @@ public class Housing implements Task {
                 Click.on(HousingPage.FILTER_BY_STARS.of("5")),
                 Click.on(HousingPage.ORDER_BY_DINAMIC),
                 Click.on(HousingPage.DINAMICS_ORDER_OPTIONS));
-
-                try {
-                    Thread.sleep(3000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-
-                 actor.attemptsTo(Scroll.to(HousingPage.DESCRIBE_OF_RESULTS),
-                    Click.on(HousingPage.FIRST_RESULT),
-                    Switch.toNewWindow());
-
-                    actor.attemptsTo(Click.on(HousingPage.FIRST_BTN_RESERVATION));
-
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-
-                actor.attemptsTo(Click.on(HousingPage.NUMBER_OF_ROOMS),
-                        SelectFromOptions.byValue("1").from(HousingPage.NUMBER_OF_ROOMS),
-                        Click.on(HousingPage.SECOND_BTN_RESEVATION));
     }
 
     public static Housing filters(){

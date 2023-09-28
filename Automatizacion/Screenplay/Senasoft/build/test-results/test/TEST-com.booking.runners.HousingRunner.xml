@@ -1,10 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.booking.runners.HousingRunner" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-09-28T15:08:00" hostname="DESKTOP-QFN6M8D" time="0.0">
+<testsuite name="com.booking.runners.HousingRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-QFN6M8D" time="0.0">
   <properties/>
-  <testcase name="executionError" classname="com.booking.runners.HousingRunner" time="0.0">
-    <failure message="org.junit.runner.notification.StoppedByUserException" type="org.junit.runner.notification.StoppedByUserException">org.junit.runner.notification.StoppedByUserException
-	at org.junit.runner.notification.RunNotifier.fireTestStarted(RunNotifier.java:151)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:133)
+  <system-out><![CDATA[
+?[31mFailed scenarios:?[0m
+file:///C:/Users/SenaSOFT05/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/housing.feature:2 # Housing
+
+2 Scenarios (?[31m1 failed?[0m, ?[32m1 passed?[0m)
+9 Steps (?[31m1 failed?[0m, ?[36m4 skipped?[0m, ?[32m4 passed?[0m)
+1m8,184s
+
+
+net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException: Expected condition failed: waiting for By.xpath: (//span[@class='eedba9e88a'])[14] to be present (tried for 20 second(s) with 100 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-QFN6M8D', ip: '172.18.1.247', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'
+Driver info: driver.version: unknown
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.throwShouldBePresentErrorWithCauseIfPresent(WebElementFacadeImpl.java:1094)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilPresent(WebElementFacadeImpl.java:1067)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementPresent(WebElementFacadeImpl.java:987)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1263)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$2rlf9gke.performAs$accessor$sOmYM3qs(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$2rlf9gke.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
+	at com.booking.tasks.ClickOnServiceButton.performAs(ClickOnServiceButton.java:21)
+	at com.booking.tasks.ClickOnServiceButton$ByteBuddy$gSo9Omga.performAs$accessor$zqaANGhK(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at com.booking.tasks.ClickOnServiceButton$ByteBuddy$gSo9Omga.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
+	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:165)
+	at com.booking.stepsdefinitions.FlightsStepDefinition.thatTheUserIsOnThePage(FlightsStepDefinition.java:18)
+	at ?.that the user is on the "housing" page(file:///C:/Users/SenaSOFT05/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/housing.feature:3)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.xpath: (//span[@class='eedba9e88a'])[14] to be present (tried for 20 second(s) with 100 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-QFN6M8D', ip: '172.18.1.247', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilPresent(WebElementFacadeImpl.java:1064)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementPresent(WebElementFacadeImpl.java:987)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1263)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$2rlf9gke.performAs$accessor$sOmYM3qs(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$2rlf9gke.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
+	at com.booking.tasks.ClickOnServiceButton.performAs(ClickOnServiceButton.java:21)
+	at com.booking.tasks.ClickOnServiceButton$ByteBuddy$gSo9Omga.performAs$accessor$zqaANGhK(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at com.booking.tasks.ClickOnServiceButton$ByteBuddy$gSo9Omga.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
+	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:165)
+	at com.booking.stepsdefinitions.FlightsStepDefinition.thatTheUserIsOnThePage(FlightsStepDefinition.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
 	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
@@ -53,12 +166,6 @@
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.base/java.lang.Thread.run(Thread.java:829)
-</failure>
-  </testcase>
-  <system-out><![CDATA[
-0 Scenarios
-0 Steps
-0m0,623s
 
 
 ]]></system-out>
@@ -80,5 +187,10 @@
 -------------------------------------------------------------------------------------
 
 [Test worker] INFO  - Test Suite Started: Housing
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@81c6aab: Generating report for test outcome: Housing:Housing
+[pool-1-thread-2] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@81c6aab: Generating report for test outcome: Housing:search housing successful
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@6f8c4bfe: Generating report for test outcome: Housing:Housing
+[pool-2-thread-2] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@6f8c4bfe: Generating report for test outcome: Housing:search housing successful
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Cleanup test resources for URI file:///C:/Users/SenaSOFT05/Desktop/Senasoft2023Grupo7/Automatizacion/Screenplay/Senasoft/src/test/resources/features/housing.feature
 ]]></system-err>
 </testsuite>
